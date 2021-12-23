@@ -1,0 +1,30 @@
+.hébergement {
+    font-weight: bold;
+}
+
+#flex-container
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#element1
+
+{
+    border: 5px solid black
+}
+#element2
+{
+    border: 7px solid black
+}
+#element3
+{
+    border: 5px solid black
+}
+
+
+/* taille des blocks, header, footer.../
