@@ -1,44 +1,73 @@
 <!DOCTYPE html>
 <html>
     <head>
-                <!-- En-tête de la page -->
+                
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <title>Booki</title>
          </head>
 
     <body>
-        <header>
-   <p>
-       <img src="images/logo/booki.png" alt="logo de Booki"/>
-   </p>
+       
+        
+        <header id="entete"style='display: block;'> <!---début en tete-->
+            <div id="entete1">
+            <p>
+              <img src="images/logo/booki.png" alt="logo de Booki"/>
+            </p>
 
-   <p class="titre1">Trouvez votre hébergement pour des vacances de rêves</p>
+            <h1 class="titre1">Trouvez votre hébergement pour des vacances de rêves</h1>
 
-   <p class= "titre2">En plein centre ville ou en pleine nature</p>
-   
-<p class= "hébergement"><a href="#heb_marseille">Hébergements</a>
+            <h2 class= "titre2">En plein centre ville ou en pleine nature</h2>
+            </div>
+            <div id="barrenav">
+                 <aside id="navigationentete"> <!---barre de navigation haut droit-->
+                 </div>
+            <p class= "hébergement"><a href="#heb_marseille">Hébergements</a>
 
-</p>
-<p class= activités><a href="#acti">Activités</a></p>
-</header>
+            </p>
+            <p class= "activités"><a href="#acti">Activités</a></p>
+                     </aside><!---fin barre de navigation haut droit--->
 
-<section> <!--- barre de recherche--->
 
-    <form method="post" action="traitement.php">
+            <p class= "barrederecherche"><form method="post" action="traitement.php"><p> 
+                <label for="recherchelocalisation">
+                    Rechercher
+                </label>:
+                <input type="text" name="recherchelocalisation" />
+            </p>
+                <!---ci dessous les filtres-->
+            <p class="filtres">Filtres
+                    <form method="post" action="traitement.php">
 
-        <p> 
-            <label for="recherchelocalisation">
-                Rechercher
-            </label>:
-            <input type="text" name="recherchelocalisation" /></p>
+                    <formmethod="post" action="traitement.php">
+                     <p> &Eacute;conomique</p>
+                    </form>
+                    <form method="post" action="traitement.php">
+                         <p>Familial</p>   
+                     </form>
+                     <form method="post" action="traitement.php">
+                        <p>Romantique</p>
+                    </form>
+                    <form method="post" action="traitement.php">
+                        <p>Animaux autorisés</p>
+                    </form>
 
-    </form>
+            <p>
+            </div>
+        </header> <!---fin de l'entete>-->
+
+
+
+    
+
+        
 </section>
 <!--- Manque ici le  cf marseille, france dans l'exemple
 manque aussi les 4 filtres et i "plus de 500 logements sont disponibles dans cette ville"-->
 
-<section>
+<section> <!---ici, rubrique hébergement à marseille 6 blocks-->
+    <div id= "section.heb">
     <p >Hébergements à Marseille
         <h1 id="heb_marseille">Hébergements à Marseille</h1><!-----ancre dans le titre--->
 
@@ -51,6 +80,7 @@ manque aussi les 4 filtres et i "plus de 500 logements sont disponibles dans cet
             <div id="element6">Element6</div>
         </div>
     </p>
+</div>
     <aside>
         <p>
            <p class= "popu">Les plus populaires</p>
@@ -68,7 +98,9 @@ manque aussi les 4 filtres et i "plus de 500 logements sont disponibles dans cet
 
 <footer>
     <!--insérer les liens dans cette section footer-->
- <p>A propos
+
+<div class="basdepage"> 
+     <p>A propos
      <a>href="url de a propos"</a>
  </p>   
  <p>Fonctionnement du site
@@ -87,7 +119,10 @@ manque aussi les 4 filtres et i "plus de 500 logements sont disponibles dans cet
  <p>Centre d'aide</p>
  <p>Nous contacter</p>
 
+</div>  
 </footer>
+
+</div>
     </body>
 
 
