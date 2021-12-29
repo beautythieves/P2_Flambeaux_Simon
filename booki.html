@@ -5,87 +5,121 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="style.css" />
         <title>Booki</title>
+        <script src="https://kit.fontawesome.com/a1a68e24d9.js" crossorigin="anonymous"></script>
          </head>
 
     <body>
        
         
-        <header id="entete"style='display: block;'> <!---début en tete-->
-            <div id="entete1">
-            <p>
-              <img src="images/logo/booki.png" alt="logo de Booki"/>
-            </p>
-
-            <h1 class="titre1">Trouvez votre hébergement pour des vacances de rêves</h1>
-
-            <h2 class= "titre2">En plein centre ville ou en pleine nature</h2>
+        <header id="entete">
+            <!---début en tete-->
+            <div id="logo"> <!---debut blok logo--->
+                <p>
+                    <img src="images/logo/booki.png" alt="logo de Booki" />
+                </p>
             </div>
-            <div id="barrenav">
-                 <aside id="navigationentete"> <!---barre de navigation haut droit-->
-                 </div>
-            <p class= "hébergement"><a href="#heb_marseille">Hébergements</a>
-
-            </p>
-            <p class= "activités"><a href="#acti">Activités</a></p>
-                     </aside><!---fin barre de navigation haut droit--->
-
-
-            <p class= "barrederecherche"><form method="post" action="traitement.php"><p> 
-                <label for="recherchelocalisation">
-                    Rechercher
-                </label>:
-                <input type="text" name="recherchelocalisation" />
-            </p>
-                <!---ci dessous les filtres-->
-            <p class="filtres">Filtres
-                    <form method="post" action="traitement.php">
-
-                    <formmethod="post" action="traitement.php">
-                     <p> &Eacute;conomique</p>
-                    </form>
-                    <form method="post" action="traitement.php">
-                         <p>Familial</p>   
-                     </form>
-                     <form method="post" action="traitement.php">
-                        <p>Romantique</p>
-                    </form>
-                    <form method="post" action="traitement.php">
-                        <p>Animaux autorisés</p>
-                    </form>
-
-            <p>
-            </div>
-        </header> <!---fin de l'entete>-->
-
-
-
+            <!---fin du block logo booki-->
     
-
+            <div id="trouvez">
+                <!---début block trouvez votre hebergement... en pleine nature-->
+                <h1 class="titre1"><strong>Trouvez votre hébergement pour des vacances de rêves</strong></h1>
+    
+                <h2 class="titre2">En plein centre ville ou en pleine nature</h2>
+            </div>
+            <!---fin du block hébergement-->
+           
+                <!---DEBUT BARRE DE RECHRCHE-->
+            <div id="rechercher">
+                <i class="fas fa-map-marker-alt"></i>
+       
+                <span><input type="text" name="recherchelocalisation" />
+                    <label for="recherchelocalisation">
+                        Rechercher</span></div>
+                                    
+                    
+                </div>
+    
+                
+                <!---ci dessous les filtres-->
+                <p class="filtres">Filtres
+                  
+                    <button type="submit">
+                <i class="fa-duotone fa-money-bill-simple-wave"></i>
+                Romantique</button>
+                 
+                <p>
+    
+                   
+                    </div>
+        </header>
+        <!---fin de l'entete>-->
+    
+        <aside id="nav"><!---barre de navigation haut droit-->
+                
+            <ul id="navigation">
+                <div class="hébergement"><a href="#heb_marseille">Hébergements</a>
+                
+                </div>
+            </br>
+                <div class="activités"><a href="#acti">Activités</a></li>
+                </div>
+                </ul>
+            </aside>
+        <!---fin barre de navigation haut droit--->
+    
+    
+    
+    <section id= "heb"> <!---ici, rubrique hébergement à marseille 6 blocks-->
+            
+            <h1 id="heb_marseille">Hébergements à Marseille</h1><!-----ancre dans le titre--->
+    
+            <div id="ligne1"><!---*1er block ligne--->
+                <div class="card">
+                   <img src="images/hebergements/3_medium/lacanne.jpg" alt="auberge la cannebière" style="width:100%">
+                         <div class="intitulecarteheb">
+                        <h1> Auberge La Cannebière</h1>
+                          <p> Nuit à partir de <span class=gras>25€</span></p>
+                          <p class="etoiles"><i class="fa-solid fa-star"></i><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i class="fa-duotone fa-star"></i></span>
+    
+                          </p>
+                        </p>
+                    </div>
+    
+                <div class="card">
+                    <img src="images/hebergements/3_medium/port.jpg" alt="auberge la cannebière" style="width:100%">
+                    <div class="intitulecarteheb">
+                        <h1>Hôtel du port</h1>
+                        <p> Nuit à partir de <span class=gras>52€</span></p>
+                        <p class="etoiles"><i class="fa-solid fa-star"></i><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span>
+                    </div>
+    
+                <div class="card">
+                    <img src="images/hebergements/3_medium/mouettes.jpg" alt="auberge la cannebière" style="width:100%">
+                    <div class="intitulecarteheb">
+                    <h1>Hôtel Les Mouettes </h1>
+                    <p> Nuit à partir de <span class=gras>76€</span></p>
+                    <p class="etoiles"><i class="fa-solid fa-star"></i><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span><span><i class="fa-solid fa-star"></i></span>
+    
+                </div>
+                </div>
+                </div>
+                <!---2eme block ligne--->
+    <div id="ligne2">
+                <div class="card">Hôtel de la mer</div>
+    
+                <div class="card">Auberge le panier</div>
+    
+                <div class="card">Hôtel chez Amina</div>
+    </div>
+            
         
-</section>
-<!--- Manque ici le  cf marseille, france dans l'exemple
-manque aussi les 4 filtres et i "plus de 500 logements sont disponibles dans cette ville"-->
-
-<section> <!---ici, rubrique hébergement à marseille 6 blocks-->
-    <div id= "section.heb">
-    <p >Hébergements à Marseille
-        <h1 id="heb_marseille">Hébergements à Marseille</h1><!-----ancre dans le titre--->
-
-        <div id="flex-container">
-            <div id="element1">Element1 </div>
-            <div id="element2">Element2</div>
-            <div id="element3">Element3 </div>
-            <div id= "element 4">Element4</div>
-            <div id= "element5">Element5</div>
-            <div id="element6">Element6</div>
-        </div>
-    </p>
-</div>
-    <aside>
-        <p>
-           <p class= "popu">Les plus populaires</p>
-        </p>
-    </aside>
+    </section>
+    
+        <aside>
+            <p>
+               <p class= "popu">Les plus populaires</p>
+            </p>
+        </aside>
 </section>
 
 <section>
