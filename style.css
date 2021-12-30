@@ -4,59 +4,92 @@ html
     height: 100%;
 }
 
-section, aside, nav, header, footer {
-    display: block;
-}
-
-#entete1
-{
-position:absolute;
-top: 20px;
-left:10px
-}
-
-footer {
-    position:absolute;
-    top: 450px;
-    left:0px; 
-    width:600px;
-    height:100px; 
-    background-color:yellow;  /* Hauteur du pied de page */
- }
-.hébergement {
-    font-weight: bold;
-}
-
-
-
-#flex-container
-{
+header
+{ 
+    width: 80%;
+    background-color: aqua;
     display: flex;
-    flex-flow: wrap;
-    justify-content: space-around;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+    flex-direction:column;
+    flex-wrap: wrap
    
+}
+
+#entete{
+}
+
+#logo 
+{
+    padding: 10px;
+    margin:10px;
+position:absolute
+top:0;
+left:0;
+}
+img{
+    width:5%
+}
+
+
+#trouvez
+{
+   position: relative
+    top:120px;
+    width:50%;
     
 }
-#entete1
-{border: 10px red;
+
+.titre1{
+font-size:medium;
+font-weight: bold;
 }
 
-#element1
+.titre2{
+font-size:small;
+font-weight:normal;
+}
 
+.filtres
 {
-    border: 5px solid black
-}
-#element2
-{
-    border: 7px solid black
-}
-#element3
-{
-    border: 5px solid black
+display:inline-table;
 }
 
+#navigation
+{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left:1960px;
+    top: -280px;
+    align-content: space-between;
+    gap:30px;
+    background-color:yellow;
+}
 
-/* taille des blocks, header, footer.../
+/*section hebergement marseille*/
+#heb
+{
+   background-color:rgb(247, 249, 250);
+}
+/*cartes "hebergement"*/
+.card{
+    display:flex;
+    justify-content: space-between;
+    width:200px;
+    margin:0px auto;
+    background-color:white;
+}
+/*pb: ce ne sont pas des étoiles qui apparaissent!!!*/
+.etoiles{
+    font-size: 20px;
+}
+
+#ligne1
+{display:flex;
+    flex-direction: row;
+    gap:20px;
+    }
+#ligne2{
+    display:flex;
+    flex-direction: wrap;
+    gap:20px;
+}
