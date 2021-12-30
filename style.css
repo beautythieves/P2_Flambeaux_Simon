@@ -6,19 +6,26 @@ html
 
 header
 { 
-    width: 80%;
+    width: 900px;
     background-color: aqua;
     display: flex;
     flex-direction:column;
-    flex-wrap: wrap
+    flex-wrap: wrap;
    
 }
 
-#entete{
+#logonav
+{display:flex;
+    justify-content: space-between;
+    align-items:stretch;
+    background-color: yellow;
+
 }
 
 #logo 
 {
+    display:flex;
+    align-self: flex-start;
     padding: 10px;
     margin:10px;
 position:absolute
@@ -26,9 +33,16 @@ top:0;
 left:0;
 }
 img{
-    width:5%
+    width:50%
 }
-
+#naventete{
+    display:flex;
+    align-self: flex-end;
+    
+    background-color:pink;
+    display:flex;
+    flex-direction:row;
+}
 
 #trouvez
 {
@@ -53,21 +67,12 @@ font-weight:normal;
 display:inline-table;
 }
 
-#navigation
-{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    left:1960px;
-    top: -280px;
-    align-content: space-between;
-    gap:30px;
-    background-color:yellow;
-}
+
 
 /*section hebergement marseille*/
 #heb
 {
+    width:800px;
    background-color:rgb(247, 249, 250);
 }
 /*cartes "hebergement"*/
