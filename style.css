@@ -3,11 +3,16 @@ html
     font-family: 'Raleway', sans-serif;
     height: 100%;
 }
-
+body
+{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
 header
 { 
     width: 900px;
-    background-color: aqua;
+    background-color: aqua
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -28,29 +33,23 @@ header
     align-self: flex-start;
     padding: 10px;
     margin:10px;
-position:absolute
+position:absolute;
 top:0;
 left:0;
+width:50%;
 }
-img{
-    width:50%
-}
-#naventete{
-    display:flex;
+
+
+#naventete
+{
+    display:flex
     align-self: flex-end;
-    
+    text-decoration:none;/*marche pas*/
     background-color:pink;
-    display:flex;
     flex-direction:row;
 }
 
-#trouvez
-{
-   position: relative
-    top:120px;
-    width:50%;
-    
-}
+
 
 .titre1{
 font-size:medium;
@@ -62,27 +61,59 @@ font-size:small;
 font-weight:normal;
 }
 
-.filtres
-{
-display:inline-table;
+#rechercher{
+    width:260px;
+    border: solid;
+    border-radius: 10px;
+    border-color: rgb(179, 199, 185);
 }
 
+ .fas fa-map-marker-alt
+{
+    color: black;
+    background-color:rgb(117, 27, 27)
+}
+#boutonrechercher{
+    color: white;
+    background-color: rgb(22, 94, 143);
+}
+.filtres
+{
+    width:550px;
+display:flex;
+justify-content: space-between;
+}
 
+#information{
+    display:inline-flex;
+    flex-direction: row;
+}
+
+#blockhebpopu{
+    display:flex;
+}
 
 /*section hebergement marseille*/
 #heb
 {
-    width:800px;
+    width:auto;
    background-color:rgb(247, 249, 250);
+   margin:auto;
 }
 /*cartes "hebergement"*/
 .card{
     display:flex;
+flex-wrap: wrap;
     justify-content: space-between;
-    width:200px;
+    width: 100px;;
     margin:0px auto;
     background-color:white;
 }
+.intitulecarteheb{
+    display: flex;
+    flex-direction:column;
+}
+
 /*pb: ce ne sont pas des étoiles qui apparaissent!!!*/
 .etoiles{
     font-size: 20px;
@@ -90,11 +121,35 @@ display:inline-table;
 
 #ligne1
 {display:flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap:20px;
     }
 #ligne2{
     display:flex;
-    flex-direction: wrap;
+    flex-flow: row wrap;
     gap:20px;
+}
+/*footer*/
+footer{
+    width:800px;
+    background-color: rgb(247, 249, 250);
+    height:150px;
+}
+.basdepage{
+    display:flex;
+    justify-content: space-between;
+    align-items:baseline;
+    align-content: space-between;
+
+}
+.footer{
+    font-size:13px;
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;    /*pourquoi ça marche pas?*/
+
+}
+.gras{
+  font-weight: bold;
+  
 }
