@@ -96,38 +96,39 @@ justify-content: space-between;
 /*section hebergement marseille*/
 #heb
 {
-    width:auto;
-   background-color:rgb(247, 249, 250);
+    width:600px;
+    height: 800px;
+   background-color:rgb(202, 45, 176);
    margin:auto;
+}
+
+#heb_marseille{
+    font-size: 12px;
 }
 /*cartes "hebergement"*/
 .card{
+    box-sizing: border-box;
+    font-size: 8px;
     display:flex;
 flex-wrap: wrap;
     justify-content: space-between;
-    width: 100px;;
+    width: 100px;
     margin:0px auto;
-    background-color:white;
+    background-color:rgb(44, 136, 60);
+}
+.etoiles{
+    font-size: 6px;
 }
 .intitulecarteheb{
     display: flex;
     flex-direction:column;
 }
 
-/*pb: ce ne sont pas des étoiles qui apparaissent!!!*/
-.etoiles{
-    font-size: 20px;
-}
 
-#ligne1
-{display:flex;
-    flex-flow: row wrap;
-    gap:20px;
-    }
-#ligne2{
+#sixblocks{
     display:flex;
     flex-flow: row wrap;
-    gap:20px;
+    justify-content: space-between;
 }
 /*footer*/
 footer{
