@@ -4,7 +4,8 @@ html
     height: 100%;
 }
 body
-{
+{display:flex;
+    flex-direction: column;
     margin-left: 10%;
     margin-right: 10%;
     
@@ -12,7 +13,7 @@ body
 header
 { 
     width: 900px;
-    background-color: aqua
+    background-color: aqua;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -47,6 +48,12 @@ width:50%;
     text-decoration:none;/*marche pas*/
     background-color:pink;
     flex-direction:row;
+}
+
+.hébergement , .activités /*pourquoi la mise en forme des liens marche ici?*/
+{
+    font-size: 10px;
+    text-decoration: none;
 }
 
 
@@ -85,36 +92,64 @@ justify-content: space-between;
 }
 
 #information{
-    display:inline-flex;
+    display:flex;
     flex-direction: row;
+    
 }
 
 #blockhebpopu{
     display:flex;
+    flex-direction: row;
+    justify-content: none;
 }
 
 /*section hebergement marseille*/
 #heb
-{
-    width:600px;
-    height: 800px;
-   background-color:rgb(202, 45, 176);
+{display:flex;
+    width:700px;
+    height: 400px;
+   background-color:grey;
    margin:auto;
 }
 
-#heb_marseille{
+#heb_marseille/* titre hebergement marseille*/
+{display:flex;
+    align-self:baseline;/*pb icicomment mettre intitulé au dessus?*/
     font-size: 12px;
 }
+
+#sixblocks{
+    display:flex;
+    flex-flow: row wrap;
+    justify-content:start;
+    align-items:center;
+   
+}
+
 /*cartes "hebergement"*/
 .card{
+    border-style: solid;
+    border-color: aliceblue;
     box-sizing: border-box;
     font-size: 8px;
     display:flex;
-flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100px;
-    margin:0px auto;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content:center;
+    align-items: flex;/*utlité ici?*/
+    width: 110px;
+    height: 150px;
+    margin:10px;
+    padding: ;/*utilité?*/
+    border-radius:10px;
     background-color:rgb(44, 136, 60);
+    object-fit:fill;/*pb ici*/
+}
+.card > img{
+    border-radius:10px 10px 0 0;
+    object-position: top;/*inutile ici?*/
+    height:60px;
+    object-fit:fill;
 }
 .etoiles{
     font-size: 6px;
@@ -122,25 +157,66 @@ flex-wrap: wrap;
 .intitulecarteheb{
     display: flex;
     flex-direction:column;
+    justify-content:flex-end;/*!!!!*/
+    align-items:left;
+    padding: -20px
+    margin: -50px;
 }
 
+/*aside (les plus populaires*/
 
-#sixblocks{
+aside{
+    width:500px;
+    background-color:rgb(0, 255, 128);
     display:flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    
 }
+
+#entetepopu{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.card2{
+    border-style: solid;
+    border-color: aliceblue;
+    box-sizing: border-box;
+    font-size: 8px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content:center;
+    align-items: flex;/*utlité ici?*/
+    width: 110px;
+    height: 80px;
+    margin:10px;
+    padding: ;/*utilité?*/
+    border-radius:10px;
+    background-color:rgb(44, 136, 60);
+    object-fit:fill;/*pb ici*/
+    }
+
+.intitulecarteheb2{
+    
+}
+
 /*footer*/
 footer{
     width:800px;
     background-color: rgb(247, 249, 250);
     height:150px;
+    
 }
 .basdepage{
     display:flex;
     justify-content: space-between;
     align-items:baseline;
     align-content: space-between;
+    
 
 }
 .footer{
@@ -150,7 +226,11 @@ footer{
     text-decoration: none;    /*pourquoi ça marche pas?*/
 
 }
+.footer > p> a{
+    text-decoration: none;
+}
 .gras{
   font-weight: bold;
+  
   
 }
