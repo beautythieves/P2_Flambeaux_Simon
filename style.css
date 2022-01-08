@@ -4,16 +4,16 @@ html
     height: 100%;
 }
 body
-{display:flex;
-    flex-direction: column;
+{display:flex
+    flex-direction: column
     margin-left: 10%;
     margin-right: 10%;
     
 }
 header
 { 
-    width: 900px;
-    background-color: aqua;
+    width: 100%;
+    background-color:
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -24,8 +24,6 @@ header
 {display:flex;
     justify-content: space-between;
     align-items:stretch;
-    background-color: yellow;
-
 }
 
 #logo 
@@ -37,29 +35,36 @@ header
 position:absolute;
 top:0;
 left:0;
-width:50%;
+}
+
+#logonav img{
+    width:80px;
 }
 
 
 #naventete
 {
-    display:flex
-    align-self: flex-end;
-    text-decoration:none;/*marche pas*/
-    background-color:pink;
+    
+    display: flex;
     flex-direction:row;
+padding:10px;
+
 }
 
-.hébergement , .activités /*pourquoi la mise en forme des liens marche ici?*/
+.hébergement , .activites /*pourquoi la mise en forme des liens marche ici?*/
 {
     font-size: 10px;
     text-decoration: none;
+   
+}
+.activites{
+    margin-left: 80px;
 }
 
 
 
 .titre1{
-font-size:medium;
+font-size:15px;
 font-weight: bold;
 }
 
@@ -69,21 +74,29 @@ font-weight:normal;
 }
 
 #rechercher{
-    width:260px;
-    border: solid;
+    display:flex;
+    border: 1px solid #791b1b;
     border-radius: 10px;
-    border-color: rgb(179, 199, 185);
+    border-color: #F2F2F2;
+   
 }
 
-
-
+.fa-map-marker-alt{
+    background-color:#F2F2F2;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
 #boutonrechercher{
     color: white;
-    background-color: rgb(22, 94, 143);
+   
+    border-radius: 10px;
+    font-size: 11px;
+    padding-bottom: 4px;;
 }
 .filtres
 {
-    width:550px;
+    width:75%;
 display:flex;
 justify-content: space-between;
 }
@@ -91,7 +104,7 @@ justify-content: space-between;
 #information{
     display:flex;
     flex-direction: row;
-    
+       
 }
 
 #blockhebpopu{
@@ -100,13 +113,23 @@ justify-content: space-between;
     justify-content: none;
 }
 
+.fa-info-circle{
+    margin-right: 20px;
+    background: #0065FC;
+	color: #FFFFFF;
+	border: 3px solid #F2F2F2;
+	border-radius: 15px;
+}
+
 /*section hebergement marseille*/
 #heb
 {display:flex;
-    width:700px;
-    height: 400px;
+    flex-direction: column;
+    width:70%;
+    height: 25%;
    background-color:grey;
    margin:auto;
+   border-radius: 10px;
 }
 
 #heb_marseille/* titre hebergement marseille*/
@@ -134,19 +157,19 @@ justify-content: space-between;
     flex-grow: 1;
     justify-content:center;
     align-items: flex;/*utlité ici?*/
-    width: 110px;
+    width: 130px;
     height: 150px;
     margin:10px;
     padding: ;/*utilité?*/
     border-radius:10px;
-    background-color:rgb(44, 136, 60);
-    object-fit:fill;/*pb ici*/
+    background-color:white;
+    object-fit:contain;/*pb ici*/
 }
 .card > img{
     border-radius:10px 10px 0 0;
-    object-position: top;/*inutile ici?*/
-    height:60px;
-    object-fit:fill;
+    max-height: 68px;
+    object-fit:cover;
+    
 }
 .etoiles{
     font-size: 6px;
@@ -163,11 +186,13 @@ justify-content: space-between;
 /*aside (les plus populaires*/
 
 aside{
-    width:500px;
+    width:30%;
     background-color:rgb(0, 255, 128);
     display:flex;
     flex-direction: column;
-    
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 #entetepopu{
@@ -189,44 +214,68 @@ aside{
     justify-content:center;
     align-items: flex;/*utlité ici?*/
     width: 110px;
-    height: 80px;
+    height: 10px;
     margin:10px;
     padding: ;/*utilité?*/
     border-radius:10px;
     background-color:rgb(44, 136, 60);
-    object-fit:fill;/*pb ici*/
+    object-fit: cover/*pb ici*/
+    
     }
+
+.card2 > img{
+    max-width:100px;
+    max-height:100px;
+    object-position: top right;/*inutile ici*/
+}
 
 .intitulecarteheb2{
     
 }
 
 /*section activités à Marseille*/
-
-#dernierblok{/*pourquoi il ne s('aligne pas? conflit avec le flex du body?*/
-    height:800px;
-    width:900px;
-    display:flex;
-    background-color:rgb(226, 84, 84);
-    flex-wrap: wrap;
-    align-items:unset;
-}  
-
-#acti{
+#titreacti{
     font-size: 12px;
     font-weight: bold;
+    width:200px;
 }
 
-.cardactigrande > img{
-    border-radius:10px 10px 0 0;
+#activitesamarseille{   
+    display:flex;
+    flex-direction: row;
+    background-color:rgb(79, 126, 89);
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:center ;
+    width: auto
+}  
+
+
+.cardactigrande{
+    width:auto;
+    object-fit:cover;
 }
 .cardactipetite{
+    width:auto;
+}
+.cardactigrande > img{
     border-radius:10px 10px 0 0;
+    width:200px;
+    height:300px;
+    object-fit:cover;
+    
+}
+.cardactipetite > img{
+    border-radius:10px 10px 0 0;
+    width:200px;
+    height:150px;
 }
 .intitulecarteactivites{
     font-size:10px;
-    font-weight: bold;
+    font-weight:bold;
+    width:100%;
 }
+
 
 /*footer*/
 footer{
@@ -247,8 +296,7 @@ footer{
     font-size:13px;
     display:flex;
     flex-direction:column;
-    text-decoration: none;    /*pourquoi ça marche pas?*/
-
+    
 }
 .footer > p> a{
     text-decoration: none;
