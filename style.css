@@ -198,6 +198,7 @@ aside{
 #entetepopu{
     display: flex;
     justify-content: space-around;
+    font-weight: bold;
 
 }
 
@@ -239,6 +240,11 @@ aside{
     font-weight: bold;
     width:200px;
 }
+#activitesamarseille h4{
+    margin: 10px 0 10px 10px;/*jouer dessus*/
+    padding: 10px;
+    font-size: 10px;
+}
 
 #activitesamarseille{   
     display:flex;
@@ -249,26 +255,38 @@ aside{
     align-items:center ;
     width: auto
 }  
-
+.colonne{
+    display:flex;
+    justify-content: center;
+}
 
 .cardactigrande{
     width:auto;
-    object-fit:cover;
+    background-color:#F2F2F2;
+    border-radius:10px;
+    margin:20px 0 20px 0;
+    box-shadow: 5px 5px 0 #F2F2F2;
 }
 .cardactipetite{
     width:auto;
+    background-color:#F2F2F2;
+    box-shadow: 5px 5px 0 #F2F2F2;
+    border-radius: 10px;
+    margin:10px 0 10px 0;  /*a corriger ici*/
+    
 }
 .cardactigrande > img{
     border-radius:10px 10px 0 0;
     width:200px;
-    height:300px;
-    object-fit:cover;
+    height:230px;
+    object-fit: cover;
     
 }
 .cardactipetite > img{
     border-radius:10px 10px 0 0;
     width:200px;
-    height:150px;
+    height:70px;
+    object-fit: cover;
 }
 .intitulecarteactivites{
     font-size:10px;
