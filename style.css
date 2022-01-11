@@ -4,24 +4,23 @@ html
     height: 100%;
 }
 body
-{display:flex
-    flex-direction: column
+{
     margin-left: 10%;
     margin-right: 10%;
     
 }
+
 header
 { 
     width: 100%;
-    background-color:
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
-   
 }
 
 #logonav
-{display:flex;
+{
+    display:flex;
     justify-content: space-between;
     align-items:stretch;
 }
@@ -32,9 +31,9 @@ header
     align-self: flex-start;
     padding: 10px;
     margin:10px;
-position:absolute;
-top:0;
-left:0;
+    position:absolute;
+    top:0;
+    left:0;
 }
 
 #logonav img{
@@ -47,59 +46,87 @@ left:0;
     
     display: flex;
     flex-direction:row;
-padding:10px;
+    padding:10px;
 
 }
 
-.hébergement , .activites /*pourquoi la mise en forme des liens marche ici?*/
+.hébergement , .activites 
 {
     font-size: 10px;
     text-decoration: none;
    
 }
 .activites{
-    margin-left: 80px;
+    margin-left: 50px;
 }
 
 
 
 .titre1{
-font-size:15px;
+font-size:12px;
 font-weight: bold;
 }
 
 .titre2{
-font-size:small;
+font-size:9px;
 font-weight:normal;
 }
 
 #rechercher{
     display:flex;
-    border: 1px solid #791b1b;
-    border-radius: 10px;
-    border-color: #F2F2F2;
+    border: 1px solid ;
+    border-color:#F2F2F2;
+    border-radius:10px;
+    width: 30%;
+    height: 30px;
+    
    
 }
 
 .fa-map-marker-alt{
-    background-color:#F2F2F2;
-    font-size: 10px;
-    margin-top: 10px;
-    margin-right: 10px;
+    background-color:#a17b7b;
+    font-size: 11px;
+    padding:10px;
+    border-radius: 10px 0 0 10px;
 }
 #boutonrechercher{
-    color: white;
-   
-    border-radius: 10px;
+    color:white;
+   background-color:#0065FC;
+    border-radius: 0px 10px 10px 0px;
     font-size: 11px;
     padding-bottom: 4px;;
 }
+/*ci dessous les filtres*/
+
 .filtres
 {
-    width:75%;
+padding-top: 20px;
+width:75%;
 display:flex;
 justify-content: space-between;
+height: 30px;
 }
+
+#entetefiltre > h2{
+    font-size: 10px;
+    }
+
+    .boutonfiltre{
+font-size: 10px;
+color:#0065FC;
+border-radius: 10px;
+     }
+
+     .fa-money-bill-wave-alt , .fa-child, .fa-heart, .fa-dog {
+background-color:rgb(205, 218, 235);
+border-radius: 10px;
+padding:10px;
+     }
+
+     .txtfiltre{
+         font-size:  10px;
+         background-color:white;
+     }
 
 #information{
     display:flex;
@@ -134,7 +161,8 @@ justify-content: space-between;
 
 #heb_marseille/* titre hebergement marseille*/
 {display:flex;
-    align-self:baseline;/*pb icicomment mettre intitulé au dessus?*/
+    align-self:baseline;
+    padding-left: 10px;
     font-size: 12px;
 }
 
@@ -158,12 +186,13 @@ justify-content: space-between;
     justify-content:center;
     align-items: flex;/*utlité ici?*/
     width: 130px;
-    height: 150px;
+    height: 140px;
     margin:10px;
-    padding: ;/*utilité?*/
+    padding: px;/*utilité?*/
     border-radius:10px;
     background-color:white;
     object-fit:contain;/*pb ici*/
+    line-height: 0px;
 }
 .card > img{
     border-radius:10px 10px 0 0;
@@ -173,66 +202,94 @@ justify-content: space-between;
 }
 .etoiles{
     font-size: 6px;
+
+}
+.fa-star{
+    color:#0065FC;
 }
 .intitulecarteheb{
     display: flex;
     flex-direction:column;
-    justify-content:flex-end;/*!!!!*/
-    align-items:left;
-    padding: -20px
-    margin: -50px;
+    justify-content:flex-start;/*!!!!*/
+    align-items: baseline;
+    padding: 2px 66px 2px 2px;
+    margin-top: -7px;
+}
+
+#afficher{
+    position:relative;
+    left:10px;
 }
 
 /*aside (les plus populaires*/
 
 aside{
-    width:30%;
+    width:25%;
     background-color:rgb(0, 255, 128);
     display:flex;
     flex-direction: column;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    margin: 15px;
     border-radius: 10px;
+    height: 25%;
 }
 
 #entetepopu{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-weight: bold;
+    font-size: 12px;
 
 }
 
-
-.card2{
-    border-style: solid;
-    border-color: aliceblue;
-    box-sizing: border-box;
-    font-size: 8px;
+#cartepopu{
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
+    border-style: solid;
+    border-color: aliceblue;
+    box-sizing: border-box;/*uitilitéici?*/
     flex-grow: 1;
-    justify-content:center;
-    align-items: flex;/*utlité ici?*/
-    width: 110px;
-    height: 10px;
-    margin:10px;
-    padding: ;/*utilité?*/
+    justify-content:center;/*utilité ici?*/
     border-radius:10px;
-    background-color:rgb(44, 136, 60);
-    object-fit: cover/*pb ici*/
-    
-    }
-
-.card2 > img{
-    max-width:100px;
-    max-height:100px;
-    object-position: top right;/*inutile ici*/
+   
 }
-
-.intitulecarteheb2{
+.lespluspopulaires{
+    text-decoration: none;
+    display:flex;
+    max-width:100%;
+    max-height: 100%;
+    
     
 }
+.popuimage{
+width: 80px;
+    height: 60px;
+    max-height: 100%;
+    max-height: 100%;
+    
+}
+.intitulepopu{
+    display:flex;
+flex-direction: column; 
+}
+.nompop{
+    font-size: 10px;
+    font-weight:bold;
+color: black;
+line-height: 1px;
+}
+
+
+.nuit{
+    font-size: 10px;
+    color:black;
+}
+ 
+    
+ 
+
+    
 
 /*section activités à Marseille*/
 #titreacti{
@@ -297,7 +354,7 @@ aside{
 
 /*footer*/
 footer{
-    width:800px;
+    width:800px
     background-color: rgb(247, 249, 250);
     height:150px;
     
@@ -315,9 +372,11 @@ footer{
     display:flex;
     flex-direction:column;
     
+    
 }
 .footer > p> a{
     text-decoration: none;
+    color:black;
 }
 .gras{
   font-weight: bold;

@@ -36,51 +36,52 @@
            
                 <!---DEBUT BARRE DE RECHeRCHE-->
             <div id="rechercher">
-                <i class="fas fa-map-marker-alt"></i><span>
-                <button id="boutonrechercher">
+                <i class="fas fa-map-marker-alt"></i>
                     <input type="text" name="recherchelocalisation" />
-                    <label for="recherchelocalisation">
-                        Rechercher</span> </button>
+                <button id="boutonrechercher">
+                    <label for="recherchelocalisation">Rechercher 
+                </button>
             </div>
 
-                               
+                 
                 </br>
                     <!---ci dessous les filtres-->
-                <div class="filtres">Filtres
-
+                <div class="filtres"> 
+                    <div id="entetefiltre"><h2>Filtres</h2>
+                    </div>
                     <div class="boutonfiltre">
                         <i class="fas fa-money-bill-wave-alt"></i>
-                        <button type="submit">
+                        <button class="txtfiltre"type="submit">
                         Économique</button>
                     </div>
 
                     <div class="boutonfiltre">
                         <i class="fas fa-child"></i>
-                        <button type="submit">
+                        <button class="txtfiltre" type="submit">
                            Familial </button>
                         </div>
 
                     <div class="boutonfiltre">
                         <i class="fas fa-heart"></i>     
-                        <button type="submit">
+                        <button class="txtfiltre" type="submit">
                                 Romantique</button>
                             </div>
                     <div class="boutonfiltre">
                         <i class="fas fa-dog"></i>
-                            <button type="submit">
+                            <button class="txtfiltre" type="submit">
                                 Animaux autorisés</button>
                                 </div>
                 </div>
     
                    
-                    </div>
+                    
 
                 
                 <div id="information">
                    <p><i class="fas fa-info-circle"></i></p> 
                 
                         <p id="plusde500"> Plus de 500 logements sont disponibles dans cette ville</p>
-                        </div> <!---pourquoi cela ne s'affiche pas sur une ligne?----->
+                        </div> 
                 </div>
         </header>
         <!---fin de l'entete>-->
@@ -96,8 +97,8 @@
                     <div class="card"> <img src="images/hebergements/3_medium/lacanne.jpg" alt="auberge la cannebière" style="width:100%"/>
                             <div class="intitulecarteheb">
                                 <h4> Auberge La Cannebière</h4>
-                                    <p> Nuit à partir de <span class=gras>25€</span></p>
-                                    <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="far fa-star"></i></i></span></p> 
+                                    <p> Nuit à partir de <span class=gras>25€</span></p> <!---ici, j'ai du intégrer dans le html les étoiles grises-->
+                                    <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="far fa-star"style="color:grey"></i></i></span></p> 
                                   </p>
                             </div>
                     </div>
@@ -142,8 +143,10 @@
                               </p>
                         </div>
                     </div>
+                    
                 </div>
-    
+                <br/>
+                <p id="afficher">Afficher plus</p>
         
     </section>
     
@@ -153,31 +156,58 @@
     <aside><!---début du bloc les plus populaires--->
         <div id="entetepopu"><p class="popu">Les plus populaires</p> <p> <i class="fas fa-chart-line"></i></p>
         </div>
-            <div class="card2"> 
-                <img src="images/hebergements/3_medium/lesoleil.jpg" alt="Hôtel le soleil du matin" style="width:100%"/>
-                <div class="intitulecarteheb2">
-                     <h4> Hôtel Le soleil du matin</h4>
-                     <p> Nuit à partir de <span class=gras>128€</span></p>
-                     <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span></p> 
-                     </p>
-                </div>
+            <div id="cartepopu">
+                <a class="lespluspopulaires" href="#">  
+                    <div class="popuimage"><img src="images/hebergements/3_medium/lesoleil.jpg" alt="Hôtel le soleil du matin" style="width:100%"/>
+                    </div>
+                    <div class="intitulepopu">
+                        <div class="nompop"><h4> Hôtel Le soleil du </h4><br>matin</h4>
+                        </div>
+                        <div class="nuit"><p> Nuit à partir de <span class=gras>128€</span></p>
+                        </div>
+                        <div class="notes">
+                        <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span></p> 
+                        </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card2"> <img src="images/hebergements/3_medium/coeur.jpg" alt="Au coeur de l'eau Chambres d'hôtes" style="width:100%"/>
-                <div class="intitulecarteheb2">
-                    <h4> Au coeur de l'eau Chambres d'hôtes</h4>
-                    <p> Nuit à partir de <span class=gras>71€</span></p>
-                    <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="far fa-star"></i></i></span></p> 
-                    </p>
-                </div>
+            <div id="cartepopu"><!---2eme carte-->
+                <a class="lespluspopulaires" href="#">  
+                    <div class="popuimage"><img src="images/hebergements/3_medium/coeur.jpg" alt="Hôtel le soleil du matin" style="width:100%"/>
+                    </div>
+                    <div class="intitulepopu">
+                        <div class="nompop"><h4> Au coeur de l'eau</h4><br> Chambres d'hôtes</h4>
+                        </div>
+                        <div class="nuit"><p> Nuit à partir de <span class=gras>71€</span></p>
+                        </div>
+                        <div class="notes">
+                        <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span></p> 
+                        </p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            <div class="card2"> <img src="images/hebergements/3_medium/toutbleu.jpg" alt="Hôtel tout bleu et Blanc" style="width:100%"/>
-                <div class="intitulecarteheb2">
-                    <h4> Hôtel tout bleu et Blanc</h4>
-                    <p> Nuit à partir de <span class=gras>68€</span></p>
-                    <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="far fa-star"></i></i></span></p> 
-                    </p>
-                </div>
+            <div id="cartepopu"> <!---3eme carte-->
+                <a class="lespluspopulaires" href="#">  
+                    <div class="popuimage"><img src="images/hebergements/3_medium/toutbleu.jpg" alt="Hôtel le soleil du matin" style="width:100%"/>
+                    </div>
+                    <div class="intitulepopu">
+                        <div class="nompop"><h4> Hôtel Tout bleu et Blanc</h4>
+                        </div>
+                        <div class="nuit"><p> Nuit à partir de <span class=gras>68€</span></p>
+                        </div>
+                        <div class="notes">
+                        <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span></p> 
+                        </p>
+                        </div>
+                    </div>
+                </a>
             </div>
+           
+
+           
+                
     </aside><!---fin du boc les plus populaires-->
 
 </div><!---fin du bloc heb marseille + les plus populaires-->
