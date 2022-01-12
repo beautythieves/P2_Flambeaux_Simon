@@ -101,45 +101,46 @@ font-weight:normal;
 .filtres
 {
 padding-top: 20px;
-width:75%;
+width:70%;
 display:flex;
 justify-content: space-between;
 height: 30px;
 }
-
-#entetefiltre > h2{
-    font-size: 10px;
-    }
-
-    .boutonfiltre{
+#entetefiltre{
+margin-right: 20px;
+}
+#entetefiltre > h2
+{
 font-size: 10px;
-color:#0065FC;
-border-radius: 10px;
-     }
 
-     .fa-money-bill-wave-alt , .fa-child, .fa-heart, .fa-dog {
-background-color:rgb(205, 218, 235);
+}
+
+.boutonfiltre{
+display:flex;
+font-size: 10px;
+border-radius: 10px;
+}
+
+.fa-money-bill-wave-alt , .fa-child, .fa-heart, .fa-dog {
+background-color:rgb(195, 203, 214);
+color: #0065FC;
 border-radius: 10px;
 padding:10px;
-     }
+font-size: 12px;
+}
 
-     .txtfiltre{
-         font-size:  10px;
-         background-color:white;
+.intitulefiltre{
+padding-right: 1px;
+margin-left: 0px;
      }
+         
+
 
 #information{
     display:flex;
     flex-direction: row;
        
 }
-
-#blockhebpopu{
-    display:flex;
-    flex-direction: row;
-    justify-content: none;
-}
-
 .fa-info-circle{
     margin-right: 20px;
     background: #0065FC;
@@ -148,7 +149,17 @@ padding:10px;
 	border-radius: 15px;
 }
 
-/*section hebergement marseille*/
+
+
+
+/*section hebergement marseille et aside*/
+#blockhebpopu{
+    display:flex;
+    flex-direction: row;
+    justify-content: none;
+}
+
+/*section heb marseille*/
 #heb
 {display:flex;
     flex-direction: column;
@@ -162,60 +173,76 @@ padding:10px;
 #heb_marseille/* titre hebergement marseille*/
 {display:flex;
     align-self:baseline;
-    padding-left: 10px;
+    padding-left: 15px;
     font-size: 12px;
+    font-weight: 500;
 }
 
 #sixblocks{
     display:flex;
     flex-flow: row wrap;
-    justify-content:start;
+    justify-content:space-around;
     align-items:center;
+    width:100%;
+    height:auto;
    
 }
 
 /*cartes "hebergement"*/
+.liencarteheb{
+    box-sizing: border-box;
+    text-decoration: none;
+    color:black;
+}
 .card{
     border-style: solid;
     border-color: aliceblue;
-    box-sizing: border-box;
-    font-size: 8px;
     display:flex;
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content:center;
     align-items: flex;/*utlité ici?*/
     width: 130px;
-    height: 140px;
+    height: 130px;
     margin:10px;
-    padding: px;/*utilité?*/
     border-radius:10px;
     background-color:white;
-    object-fit:contain;/*pb ici*/
+    object-fit: cover;
     line-height: 0px;
+    
 }
-.card > img{
+.card > img{/*here is the key!!!!*/
     border-radius:10px 10px 0 0;
-    max-height: 68px;
+    max-height: 100%;
     object-fit:cover;
+    width:100%;
+    height:50%;
     
 }
 .etoiles{
     font-size: 6px;
 
 }
+
 .fa-star{
     color:#0065FC;
 }
 .intitulecarteheb{
-    display: flex;
-    flex-direction:column;
-    justify-content:flex-start;/*!!!!*/
-    align-items: baseline;
-    padding: 2px 66px 2px 2px;
-    margin-top: -7px;
+    position: relative;
+    bottom:8px;
+    right:15px;
 }
-
+.intitulecarteheb2{/*oblige car le position relativ ne fonctionnait pas avec les autres cartes hormis carte 1*/
+position: relative;
+bottom: 10px;
+right: 25px;
+}
+.intitulecarteheb > h4, .intitulecarteheb2 > h4{
+font-size: 8px
+}
+.intitulecarteheb > p, .intitulecarteheb2 > p{
+    font-size:7px;
+}
 #afficher{
     position:relative;
     left:10px;
@@ -223,18 +250,19 @@ padding:10px;
 
 /*aside (les plus populaires*/
 
-aside{
+aside{/*utobene*/
     width:25%;
+    height: 25%;
     background-color:rgb(0, 255, 128);
     display:flex;
     flex-direction: column;
     padding: 15px;
     margin: 15px;
     border-radius: 10px;
-    height: 25%;
+    
 }
 
-#entetepopu{
+#entetepopu{/*tutobene*/
     display: flex;
     justify-content: space-between;
     font-weight: bold;
@@ -244,8 +272,9 @@ aside{
 
 #cartepopu{
     display:flex;
-    flex-direction: column;
-    flex-wrap:wrap;
+    flex-direction: raw;
+    flex-wrap:no-wrap;
+    justify-content: flex-start;
     border-style: solid;
     border-color: aliceblue;
     box-sizing: border-box;/*uitilitéici?*/
@@ -257,21 +286,23 @@ aside{
 .lespluspopulaires{
     text-decoration: none;
     display:flex;
-    max-width:100%;
-    max-height: 100%;
-    
+    flex-direction: raw;
+    width:50%;
+    height: 100%;
+    object-position:top;
+    object-fit:cover;
+
     
 }
-.popuimage{
-width: 80px;
-    height: 60px;
-    max-height: 100%;
-    max-height: 100%;
+.popuimage > img{
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
     
 }
 .intitulepopu{
-    display:flex;
-flex-direction: column; 
+    display:flex
+flex-direction: column 
 }
 .nompop{
     font-size: 10px;
@@ -297,11 +328,7 @@ line-height: 1px;
     font-weight: bold;
     width:200px;
 }
-#activitesamarseille h4{
-    margin: 10px 0 10px 10px;/*jouer dessus*/
-    padding: 10px;
-    font-size: 10px;
-}
+
 
 #activitesamarseille{   
     display:flex;
@@ -350,7 +377,11 @@ line-height: 1px;
     font-weight:bold;
     width:100%;
 }
-
+.intitulecarteactivites > h4{
+    margin: 10px;
+    padding: 10px;
+    font-size: 10px;
+}
 
 /*footer*/
 footer{
