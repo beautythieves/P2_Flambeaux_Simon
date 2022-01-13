@@ -101,7 +101,7 @@ font-weight:normal;
 .filtres
 {
 padding-top: 20px;
-width:70%;
+width:50%;
 display:flex;
 justify-content: space-between;
 height: 30px;
@@ -327,66 +327,78 @@ line-height: 1px;
     font-size: 12px;
     font-weight: bold;
     width:200px;
+    margin-left: 15px;
 }
 
 
-#activitesamarseille{   
+#acti{   
     display:flex;
     flex-direction: row;
-    background-color:rgb(79, 126, 89);
-    flex-wrap: wrap;
+    background-color:rgb(43, 53, 87);
+    flex-wrap: nowrap;
     justify-content:space-around;
-    align-items:center ;
-    width: auto
+    align-items:center;
+    
+    
 }  
-.colonne{
-    display:flex;
-    justify-content: center;
-}
+
+
 
 .cardactigrande{
-    width:auto;
     background-color:#F2F2F2;
     border-radius:10px;
     margin:20px 0 20px 0;
     box-shadow: 5px 5px 0 #F2F2F2;
+    width: 120px;
+    height:200px;
+  
 }
 .cardactipetite{
-    width:auto;
+    width:120px;
     background-color:#F2F2F2;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius: 10px;
-    margin:10px 0 10px 0;  /*a corriger ici*/
+    margin:10px 10px 10px 10px;  /*a corriger ici*/
     
 }
 .cardactigrande > img{
     border-radius:10px 10px 0 0;
-    width:200px;
-    height:230px;
+    width:120px;
+    height:180px;
     object-fit: cover;
     
 }
 .cardactipetite > img{
     border-radius:10px 10px 0 0;
-    width:200px;
+    width:120px;
     height:70px;
     object-fit: cover;
 }
-.intitulecarteactivites{
-    font-size:10px;
-    font-weight:bold;
-    width:100%;
+
+a[href="#"]
+{
+    text-decoration: none;
+   color:black
 }
-.intitulecarteactivites > h4{
-    margin: 10px;
-    padding: 10px;
-    font-size: 10px;
+
+.intitulecarteactivites {
+    font-size:8px;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 10px;
+padding-top: 4px;
+}
+
+
+.colonne{
+    display:flex;
+    justify-content: center;
 }
 
 /*footer*/
 footer{
-    width:800px
-    background-color: rgb(247, 249, 250);
+    width:100%;
+    background-color: rgb(145, 32, 116);
     height:150px;
     
 }
