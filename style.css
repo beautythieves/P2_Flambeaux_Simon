@@ -157,6 +157,7 @@ margin-left: 0px;
     display:flex;
     flex-direction: row;
     justify-content: none;
+    
 }
 
 /*section heb marseille*/
@@ -164,8 +165,8 @@ margin-left: 0px;
 {display:flex;
     flex-direction: column;
     width:70%;
-    height: 25%;
-   background-color:grey;
+    height: 20%;
+   background-color:#F2F2F2;
    margin:auto;
    border-radius: 10px;
 }
@@ -174,8 +175,9 @@ margin-left: 0px;
 {display:flex;
     align-self:baseline;
     padding-left: 15px;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
+    font-weight: bold;
 }
 
 #sixblocks{
@@ -203,7 +205,7 @@ margin-left: 0px;
     justify-content:center;
     align-items: flex;/*utlité ici?*/
     width: 130px;
-    height: 130px;
+    height: 100px;
     margin:10px;
     border-radius:10px;
     background-color:white;
@@ -216,7 +218,7 @@ margin-left: 0px;
     max-height: 100%;
     object-fit:cover;
     width:100%;
-    height:50%;
+    height:65%;
     
 }
 .etoiles{
@@ -229,12 +231,12 @@ margin-left: 0px;
 }
 .intitulecarteheb{
     position: relative;
-    bottom:8px;
+    
     right:15px;
 }
 .intitulecarteheb2{/*oblige car le position relativ ne fonctionnait pas avec les autres cartes hormis carte 1*/
 position: relative;
-bottom: 10px;
+bottom: 1px;
 right: 25px;
 }
 .intitulecarteheb > h4, .intitulecarteheb2 > h4{
@@ -245,15 +247,15 @@ font-size: 8px
 }
 #afficher{
     position:relative;
-    left:10px;
+    left:15px;
 }
 
 /*aside (les plus populaires*/
 
 aside{/*utobene*/
     width:25%;
-    height: 25%;
-    background-color:rgb(0, 255, 128);
+    height: 20%;
+    background-color:#F2F2F2 ;
     display:flex;
     flex-direction: column;
     padding: 15px;
@@ -266,38 +268,44 @@ aside{/*utobene*/
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 10px;
 
 }
 
-#cartepopu{
-    display:flex;
-    flex-direction: raw;
-    flex-wrap:no-wrap;
-    justify-content: flex-start;
-    border-style: solid;
-    border-color: aliceblue;
-    box-sizing: border-box;/*uitilitéici?*/
-    flex-grow: 1;
-    justify-content:center;/*utilité ici?*/
-    border-radius:10px;
+.card > img{/*here is the key!!!! a virer doublon*/
+    border-radius:10px 10px 0 0;
+    max-height: 100%;
+    object-fit:cover;
+    width:100%;
+    height:65%;
+    
+}
+
    
 }
 .lespluspopulaires{
     text-decoration: none;
-    display:flex;
-    flex-direction: raw;
-    width:50%;
-    height: 100%;
-    object-position:top;
-    object-fit:cover;
-
     
 }
-.popuimage > img{
-    width: 100%;
-    height: 100%;
-    overflow:hidden;
+
+.lespluspopulaires figure{
+    display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #ffffff;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0 4px 4px #c0c0c0;
+}
+
+.blokpopu img{
+    width:40%;
+    border-radius: 10px 0px 0px 10px;
+    height:80px;
+
+}
     
 }
 .intitulepopu{
@@ -305,7 +313,7 @@ aside{/*utobene*/
 flex-direction: column 
 }
 .nompop{
-    font-size: 10px;
+    font-size: 9px;
     font-weight:bold;
 color: black;
 line-height: 1px;
@@ -313,11 +321,13 @@ line-height: 1px;
 
 
 .nuit{
-    font-size: 10px;
+    font-size: 8px;
     color:black;
 }
  
-    
+.blokpopu > figcaption{
+    margin-left: 200px;
+}
  
 
     
@@ -338,7 +348,7 @@ line-height: 1px;
     flex-wrap: nowrap;
     justify-content:space-around;
     align-items:center;
-    
+       
     
 }  
 
@@ -349,12 +359,12 @@ line-height: 1px;
     border-radius:10px;
     margin:20px 0 20px 0;
     box-shadow: 5px 5px 0 #F2F2F2;
-    width: 120px;
+    width: 170px;
     height:200px;
   
 }
 .cardactipetite{
-    width:120px;
+    width:170px;
     background-color:#F2F2F2;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius: 10px;
@@ -363,14 +373,14 @@ line-height: 1px;
 }
 .cardactigrande > img{
     border-radius:10px 10px 0 0;
-    width:120px;
+    width:170px;
     height:180px;
     object-fit: cover;
     
 }
 .cardactipetite > img{
     border-radius:10px 10px 0 0;
-    width:120px;
+    width:170px;
     height:70px;
     object-fit: cover;
 }
@@ -390,31 +400,59 @@ padding-top: 4px;
 }
 
 
-.colonne{
+
+.cardactipetite1 .caractipetite2{
+    width:170px;
+    background-color:#F2F2F2;
+    box-shadow: 5px 5px 0 #F2F2F2;
+    border-radius: 10px;
+    margin:10px 10px 10px 10px; 
+}
+.cardactipetite1 > img{
+    border-radius:10px 10px 0 0;
+    width:170px;
+    height:90px;
+    object-fit: cover;
+}
+
+.cardactipetite2 > img{
+    border-radius:10px 10px 0 0;
+    width:170px;
+    height:50px;
+    object-fit: cover;
+}
+
+.encolonne{
     display:flex;
+    flex-direction: column;
     justify-content: center;
 }
 
 /*footer*/
 footer{
     width:100%;
-    background-color: rgb(145, 32, 116);
-    height:150px;
+    background-color:#F2F2F2;
+    height:180px;
+  
     
 }
 .basdepage{
     display:flex;
     justify-content: space-between;
     align-items:baseline;
-    align-content: space-between;
-    
+    align-content: strech;
+    padding-left: 15px;
 
 }
 .footer{
-    font-size:13px;
+    font-size:10px;
     display:flex;
     flex-direction:column;
+    margin-top: 10px;
+    justify-content: center;
     
+    flex-grow: 4;
+        
     
 }
 .footer > p> a{
@@ -423,6 +461,10 @@ footer{
 }
 .gras{
   font-weight: bold;
+  margin-bottom: 10px;
   
-  
+}
+
+.lienfooter{
+    margin-bottom:0px;
 }
