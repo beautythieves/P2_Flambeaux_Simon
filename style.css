@@ -44,7 +44,8 @@ header
    }
 
 .activites{
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-right: 0px;
 }
 
 
@@ -87,7 +88,7 @@ font-weight:normal;
 
 .filtres{
     padding-top: 20px;
-    width:600px;
+    width:75%;
     display:flex;
     justify-content: space-between;
     height: 30px;
@@ -137,11 +138,11 @@ margin-right: 5px;
     display:flex;
     flex-direction: row;
     font-size: 10px;
+    
        
 }
 .fa-info-circle{
-    margin-right: 20px;
-    
+    margin-right: 10px;    
     background: #0065FC;
 	color: #FFFFFF;
 	border: 3px solid #F2F2F2;
@@ -157,6 +158,7 @@ margin-right: 5px;
     flex-direction: row;
     justify-content: none;
     width: 980px;
+    height: 400px;
     
     
 }
@@ -168,17 +170,18 @@ margin-right: 5px;
     width:55%;
    background-color:#dd7a7a;
    border-radius: 10px;
-   height:400px;
+   height:390px;
+   padding: 0 15px;
 }
 
 #heb_marseille/* titre hebergement marseille*/
 {display:flex;
     align-self:baseline;
-    padding-left: 35px;
+    padding-left: 15px;
     padding-top: 10px;
     font-size: 12px;
     font-weight: 500;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 #sixblocks{
@@ -203,14 +206,14 @@ margin-right: 5px;
     display:flex;
     flex-wrap: wrap;
     align-items: flex;/*utlité ici?*/
-    width: 130px;
-    height: 100px;
-    margin-top:10px;
-    margin-bottom: 10px;
+    width: 150px;
+    height: 120px;
+    margin-top:0px;
+    margin-bottom: 20px;
     border-radius:10px;
     background-color:white;
     object-fit: cover;
-    line-height: 0px;
+    line-height: 2px;
     
 }
 .card > img{/*here is the key!!!!*/
@@ -231,11 +234,17 @@ margin-right: 5px;
     color:#0065FC;
     
 }
+
+.etoilegrise{
+color:rgba(126, 114, 114, 0.788);
+font-weight:bold;
+}
 .intitulecarteheb{
     display:flex;
     flex-direction: column;
     align-items: baseline;
     margin-top: -5px;
+    padding-left: 5px;
     
     
     
@@ -253,9 +262,8 @@ margin-bottom: 1px;
 }
 #afficher{
     position:relative;
-    left:35px;
-    top: 25px;
-    font-size:12px;
+    left:20px;    
+    font-size:10px;
     font-weight:bold;
 }
 
@@ -263,7 +271,7 @@ margin-bottom: 1px;
 
 aside{/*utobene*/
     width:25%;
-    height:400px;
+    height:380px;
     background-color:#F2F2F2 ;
     display:flex;
     flex-direction: column;
@@ -279,6 +287,7 @@ aside{/*utobene*/
     font-weight: bold;
     font-size: 12px;
     padding-left: 10px;
+    
 
 }
 
@@ -288,18 +297,21 @@ aside{/*utobene*/
 .lespluspopulaires{
     text-decoration: none;
     
+    
 }
 
 .lespluspopulaires figure{
     display: flex;
 	flex-direction: row;
 	width: 90%;
-	margin-bottom: 20px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: 15px;
+	margin-right: 10px;
 	border: 3px solid #ffffff;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0 4px 4px #c0c0c0;
+    position:relative;
+    bottom:15px;
 }
 .lespluspopulaires figcaption{
     margin-left:10px;
@@ -309,8 +321,8 @@ aside{/*utobene*/
 .blokpopu img{
     width:40%;
     border-radius: 10px 0px 0px 10px;
-    height:80px;
-
+    height:90px;
+    object-fit:cover;
 }
     
 
@@ -348,14 +360,14 @@ line-height: 1px;
 #acti{   
     display:flex;
     flex-direction: row;
-    background-color:rgb(43, 53, 87);
+    background-color:rgb(43, 53, 87)
     flex-wrap: nowrap;
     justify-content:space-around;
     align-items:center;  
+    width: 900px;
 }  
 
 .cardactigrande{
-    background-color:#F2F2F2;
     border-radius:10px;
     margin:20px 0 20px 0;
     box-shadow: 5px 5px 0 #F2F2F2;
@@ -365,7 +377,6 @@ line-height: 1px;
 }
 .cardactipetite{
     width:170px;
-    background-color:#F2F2F2;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius: 10px;
     margin:10px 10px 10px 10px;  /*a corriger ici*/
@@ -373,7 +384,6 @@ line-height: 1px;
 }
 .cardactipetite1 ,.cardactipetite2{
     width: 170px;
-    background-color: #F2F2F2;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
   
@@ -409,12 +419,11 @@ padding-top: 4px;
 
 
 
-.cardactipetite1 .cardactipetite2{/*pb ici!!!!*/
+.cardactipetite1 {/*pb ici!!!!*/
     
     border-radius:10px;
     box-shadow: 5px 5px 0 #F2F2F2;
-    width: 170px;
-    height:200px;
+
 
 }
 .cardactipetite1 > img{
@@ -441,7 +450,7 @@ padding-top: 4px;
 
 /*footer*/
 footer{
-    width:100%;
+    width:900px;
     background-color:#F2F2F2;
     height:130px;
     margin-top: 30px;
