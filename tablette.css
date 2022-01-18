@@ -6,9 +6,8 @@ html
 
 body
 {
-    margin-left: 10%;
+    margin-left: 6%;
     margin-right: 10%;
-    margin-top:2%;
     
 }
 
@@ -30,32 +29,20 @@ header
 
 #logonav img{
     width:70px;
-    padding: 0px 0px 15px 10px;
+    padding: 10px 0px 15px 10px;
 }
 
 
 #naventete{
     display: flex;
-    flex-direction:row;
     padding:10px;
 }
 
 .hébergement , .activites{
     font-size: 10px;
     text-decoration: none;
-    
-   }
-   .hébergement{
-       padding-right: 50px;
-   }
-   .activites{
-       padding-right: 150px;
    }
 
-.hébergement:hover{
-border-top:1px solid #0065FC;
-padding-top:15px;
-}
 .activites{
     margin-left: 40px;
     margin-right: 0px;
@@ -112,7 +99,6 @@ margin-right: 0px;
 #entetefiltre > h2
 {
 font-size: 10px;
-
 }
 
 .boutonfiltre{
@@ -168,9 +154,8 @@ margin-right: 5px;
 /*section hebergement marseille et aside*/
 #blockhebpopu{
     display:flex;
-    flex-direction: row;
     justify-content: none;
-    width: 980px;
+    width: 750px;
     height: 400px;
     
     
@@ -183,7 +168,7 @@ margin-right: 5px;
     width:55%;
    background-color:#dd7a7a;
    border-radius: 10px;
-   height:390px;
+   height:430px;
    padding: 0 15px;
 }
 
@@ -220,7 +205,7 @@ margin-right: 5px;
     flex-wrap: wrap;
     align-items: flex;/*utlité ici?*/
     width: 150px;
-    height: 120px;
+    height: 90px;
     margin-top:0px;
     margin-bottom: 20px;
     border-radius:10px;
@@ -258,8 +243,6 @@ font-weight:bold;
     align-items: baseline;
     margin-top: -5px;
     padding-left: 5px;
-    
-    
     
 }
 
@@ -368,50 +351,48 @@ line-height: 1px;
     font-weight: bold;
     width:200px;
     margin-left: 15px;
+    margin-top:50px;
 }
 
 #acti{   
     display:flex;
-    flex-direction: row;
-    background-color:rgb(43, 53, 87)
-    flex-wrap: nowrap;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items:center;  
-    width: 900px;
+    width: 750px;
 }  
 
 .cardactigrande{
     border-radius:10px;
     margin:20px 0 20px 0;
     box-shadow: 5px 5px 0 #F2F2F2;
-    width: 170px;
+    width: 130px;
     height:200px;
   
 }
 .cardactipetite{
-    width:170px;
+    width:130px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius: 10px;
-    margin:10px 10px 10px 10px;  /*a corriger ici*/
     
 }
 .cardactipetite1 ,.cardactipetite2{
-    width: 170px;
+    width: 130px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
+    margin:16px -40px 16px -40px;
   
 }
 
 .cardactigrande > img{
     border-radius:10px 10px 0 0;
-    width:170px;
+    width:130px;
     height:180px;
     object-fit: cover;
     
 }
 .cardactipetite > img{
     border-radius:10px 10px 0 0;
-    width:170px;
+    width:130px;
     height:70px;
     object-fit: cover;
 }
@@ -432,28 +413,25 @@ padding-top: 4px;
 
 
 
-.cardactipetite1 {/*pb ici!!!!*/
-    
-    border-radius:10px;
-    box-shadow: 5px 5px 0 #F2F2F2;
-
-
-}
 .cardactipetite1 > img{
     border-radius:10px 10px 0 0;
-    width:170px;
+    width:130px;
     height:80px;
     object-fit: cover;
 }
 
 .cardactipetite2 > img{
     border-radius:10px 10px 0 0;
-    width:170px;
+    width:130px;
     height:45px;
     object-fit: cover;
 }
-.colonne2{
-    padding-left: -50px;
+.colonne3{
+    margin-right:-50px;
+}
+.colonne1{
+    margin-left:-80px;
+}
 }
 .colonne2, .colonne4{
     display:flex;
@@ -463,10 +441,11 @@ padding-top: 4px;
 
 /*footer*/
 footer{
-    width:900px;
+    width:770px;
     background-color:#F2F2F2;
     height:130px;
     margin-top: 30px;
+    margin-left:-50px;
   
     
 }
@@ -484,10 +463,7 @@ footer{
     flex-direction:column;
     margin-top: 10px;
     justify-content: center;
-    
-    flex-grow: 4;
-        
-    
+    flex-grow: 4;     
 }
 .footer > p> a{
     text-decoration: none;
@@ -496,7 +472,6 @@ footer{
 .gras{
   font-weight: bold;
   margin-bottom: 10px;
-  
 }
 
 .lienfooter{
