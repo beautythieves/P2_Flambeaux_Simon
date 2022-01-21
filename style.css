@@ -37,7 +37,7 @@ header
 #naventete{
     display: flex;
     flex-direction:row;
-    padding:10px;
+    
 }
 
 .hébergement , .activites{
@@ -47,6 +47,7 @@ header
    }
    .hébergement{
        padding-right: 50px;
+       padding-top:1px;
    }
    .activites{
        padding-right: 150px;
@@ -54,7 +55,7 @@ header
 
 .hébergement:hover{
 border-top:1px solid #0065FC;
-padding-top:15px;
+padding-top:px;
 }
 .activites{
     margin-left: 40px;

@@ -21,26 +21,32 @@ header
 
 #logonav
 {
-    display:flex;    
+    display:flex;  
+    flex-direction:column;  
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
 #logonav img{
-    width:30%;
-    padding: 2% 25% 2% 35%;
+    width:100px;
+    padding-left: 50px;
 }
 
 
 #naventete{
     display: flex;
     flex-wrap:wrap;
-    padding-left: 30%;
+    justify-content: center;
+
 }
 
 .hébergement , .activites{
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
+    border-bottom:1px solid transparent;
    }
 
 .activites{
@@ -48,23 +54,27 @@ header
     margin-right: 0px;
 }
 
-
+.hébergement:hover{
+    border-bottom:1px solid #0065FC;
+    padding-top:px;
+    }
 #trouvez{
     display:flex;
     flex-direction: column;
     flex-wrap:nowrap;
     justify-content: space-around;
     align-items:center;
+    padding-left: 20px;;
 }
 .titre1{
     
-font-size:16px;
+font-size:18px;
 font-weight: 500;
 line-height: normal;
 }
 
 .titre2{
-font-size:10px;
+font-size:14px;
 font-weight:normal;
 }
 
@@ -73,10 +83,11 @@ font-weight:normal;
     
     border-color:#F2F2F2;
     border-radius:10px;
-    height: 30px;
+    height: 40px;
 }
 
 .fa-map-marker-alt{
+
     background-color:#F2F2F2;
     font-size: 11px;
     padding:10px;
@@ -94,21 +105,22 @@ font-weight:normal;
 /*ci dessous les filtres*/
 
 .filtres{
-    padding-top: 10px;
+    padding-top: 20px;
     width:100%;
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;/*inutile ici*/
-
+   
     flex-direction:/*peut etre pour suivre le modèle iphone*/
     
 }
 #entetefiltre{
-margin-right: 0px;
+margin: 0px 10px 0 10px;;
 }
 #entetefiltre > h2
 {
-font-size: 10px;
+font-size: 16px;
+
 }
 
 .boutonfiltre{
@@ -181,7 +193,7 @@ margin-right: 5px;
 {display:flex;
     flex-direction: column;
     flex-wrap:nowrap;
-   background-color:#dd7a7a;
+   background-color:white;
    border-radius: 10px;
    margin: 10px;
 }
@@ -202,6 +214,7 @@ margin-right: 5px;
     flex-wrap:nowrap;
     justify-content:space-around;
     height:initial;
+    margin: 15px;
    
 }
 
@@ -209,21 +222,20 @@ margin-right: 5px;
 .liencarteheb{
     box-sizing: border-box;
     text-decoration: none;
-    color:black;
+    
 }
 .card{
     border-style: solid;
-    border-color: aliceblue;
+    border-color: rgb(79, 117, 151);
     display:flex;
     flex-wrap: wrap;
     width: 100%;
     height: 220px;
-    margin:0px 10px 20px 10px;
+   
     border-radius:10px;
-    background-color:white;
-    padding-top: 10px;
+    margin-bottom:15px;   
     box-sizing: border-box;
-    padding: 0px 10px;
+    
 
     
 }
@@ -310,10 +322,11 @@ aside{/*utobene*/
     display: flex;
 	flex-direction: row;
 	margin-bottom: 0px;
-    margin: 0 10px;
+    margin: 10px 20px 10px 10px;
 	border: 3px solid #ffffff;
 	border-radius: 10px 10px 10px 10px;
 	box-shadow: 0 4px 4px #c0c0c0;
+    background-color: white;
     
 }
 .lespluspopulaires figcaption{
@@ -366,10 +379,11 @@ line-height: 1px;
 #acti{   
     display:flex;
     flex-direction:column;
-    align-items:start;  
+    align-items:start;
+    margin:20px;  
 } 
 .colonne1, .colonne3, .colonne4{
-    padding: 10px;
+   
     overflow:hidden;
     flex-basis:auto;
     height:200px;
@@ -382,13 +396,15 @@ line-height: 1px;
 height:200px;
     border-radius:10px;
     box-shadow: 5px 5px 0 #F2F2F2;
+    margin:0;
 }
 
 .cardactipetite1 ,.cardactipetite2{
-    width: 90%;
+    width: 100%;
     height:200px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
+    margin: 0;
 }
 .cardactipetite2 img, .cardactipetite1 img{
     border-radius:10px 10px 0 0;

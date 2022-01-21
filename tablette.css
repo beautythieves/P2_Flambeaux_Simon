@@ -35,19 +35,23 @@ header
 
 #naventete{
     display: flex;
-    padding:10px 0 0 390px;
+    
 }
 
 .hébergement , .activites{
     font-size: 10px;
     text-decoration: none;
+    border-top: 1px transparent;
    }
 
 .activites{
     margin-left: 40px;
     margin-right: 0px;
 }
-
+.hébergement:hover{
+    border-top:1px solid #0065FC;
+    padding-top:-1px;
+    }
 
 
 .titre1{
