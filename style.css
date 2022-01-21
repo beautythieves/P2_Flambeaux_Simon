@@ -97,8 +97,10 @@ font-weight:normal;
     font-weight: 500;
     border:none;
 }
-/*ci dessous les filtres*/
 
+.loupe{
+    display:none;/*ci dessous les filtres*/
+}
 .filtres{
     padding-top: 20px;
     width:75%;
