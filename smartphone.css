@@ -37,23 +37,33 @@ header
 
 
 #naventete{
-    display: flex;
     flex-wrap:wrap;
     justify-content: center;
+    border-bottom:1px solid grey
+   width:100%;
+   
 
 }
 
-.hébergement , .activites{
-    font-size: 14px;
+.hébergement {
+    font-size: 12px;
     text-decoration: none;
     border-bottom:1px solid transparent;
+    padding-bottom: 5px;
+    padding-right:50px;
+    padding-left:24px;
    }
 
 .activites{
-    margin-left: 10px;
+    font-size:12px;
+    margin-left: 10px
     margin-right: 0px;
+    text-decoration: none;
+    border-bottom:1px solid grey;
+    padding-bottom: 5px;
+    padding-right:53px;
+    padding-left:53px;
 }
-
 .hébergement:hover{
     border-bottom:1px solid #0065FC;
     padding-top:px;
@@ -64,7 +74,8 @@ header
     flex-wrap:nowrap;
     justify-content: space-around;
     align-items:center;
-    padding-left: 20px;;
+    padding-left: 10px;
+    padding-right:10px;
 }
 .titre1{
     
@@ -76,20 +87,20 @@ line-height: normal;
 .titre2{
 font-size:14px;
 font-weight:normal;
+width:100%;
 }
 
 #rechercher{
     display:flex;
-    
     border-color:#F2F2F2;
     border-radius:10px;
-    height: 40px;
+    width:100%;
+    padding-left:10px;
 }
 
 .fa-map-marker-alt{
-
     background-color:#F2F2F2;
-    font-size: 11px;
+    font-size: 18px;
     padding:10px;
     border-radius: 10px 0 0 10px;
 }
@@ -97,10 +108,13 @@ font-weight:normal;
     color:white;
     background-color:#0065FC;
     border-radius: 0px 10px 10px 0px;
-    font-size: 12px;
+    font-size: 15px;
     padding-bottom: 4px;
     font-weight: 500;
     border:none;
+}
+#boutonrechercher > label{
+    display:none;
 }
 /*ci dessous les filtres*/
 
@@ -127,7 +141,7 @@ font-size: 16px;
     display:flex;
     flex-wrap:nowrap;
     align-items:center;
-    font-size: 10px;
+    font-size: 12px;
     border: 1px solid #F2F2F2;
     border-radius: 20px  10px 10px 20px;
     
@@ -162,7 +176,7 @@ margin-right: 5px;
     display:flex;
     flex-direction: row;
     flex-wrap:nowrap;
-    font-size: 10px;
+    font-size: 12px;
     
        
 }
@@ -203,7 +217,7 @@ margin-right: 5px;
     align-self:baseline;
     padding-left: 15px;
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     font-weight: 600;
 }
@@ -214,7 +228,7 @@ margin-right: 5px;
     flex-wrap:nowrap;
     justify-content:space-around;
     height:initial;
-    margin: 15px;
+    margin: 10px;
    
 }
 
@@ -226,12 +240,12 @@ margin-right: 5px;
 }
 .card{
     border-style: solid;
-    border-color: rgb(79, 117, 151);
+    border-color:white;
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 220px;
-   
+    height: 180px;
+    box-shadow: 0 4px 4px #c0c0c0;
     border-radius:10px;
     margin-bottom:15px;   
     box-sizing: border-box;
@@ -262,8 +276,8 @@ color:rgba(126, 114, 114, 0.788);
 font-weight:bold;
 }
 .intitulecarteheb{
-    line-height: 10%;
-    
+    line-height: 40%;
+    padding-left:10px;
     
 }
 
@@ -271,6 +285,7 @@ font-weight:bold;
 font-size: 13px;
 margin-top: 10px;
 margin-bottom: 1px;
+
 }
 .nuit{
     font-size:8px;
@@ -279,8 +294,8 @@ margin-bottom: 1px;
 }
 #afficher{
     position:relative;
-    left:20px;    
-    font-size:10px;
+    left:10px;    
+    font-size:14px;
     font-weight:bold;
 }
 
@@ -291,7 +306,7 @@ aside{/*utobene*/
     display:flex;
     flex-direction: column;
     border-radius: 10px;
-    padding:5px 5px 5px 5px;
+    padding:5px 5px 25px 5px;
     width:100%;
     
 }
@@ -300,7 +315,7 @@ aside{/*utobene*/
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 18px;
     padding-left: 10px;
     padding-right: 15px;
     
@@ -371,51 +386,56 @@ line-height: 1px;
     font-size: 16px;
     font-weight: bold;
     width:100%;
-    margin: 15px;
-    margin-top:50px;
+    margin: 20px 15px 15px 20px;
+    
 }
 
 
 #acti{   
-    display:flex;
+   
     flex-direction:column;
-    align-items:start;
+    align-items:center;
     margin:20px;  
 } 
 .colonne1, .colonne3, .colonne4{
+   margin: 0;
+        flex-basis: auto;
+        box-sizing:border-box;
+        
+       
    
-    overflow:hidden;
-    flex-basis:auto;
-    height:200px;
 }
 .colonne2{
+    width:100%;
    
 }
 .cardactigrande, .cardactipetite{
-    width:100%;
-height:200px;
+    
     border-radius:10px;
     box-shadow: 5px 5px 0 #F2F2F2;
     margin:0;
+    padding-bottom:15px;
 }
 
 .cardactipetite1 ,.cardactipetite2{
-    width: 100%;
-    height:200px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
     margin: 0;
+    padding-bottom:15px;
 }
 .cardactipetite2 img, .cardactipetite1 img{
-    border-radius:10px 10px 0 0;
-    height:200px;
+    border-radius:30px 30px 0 0;
+    height:140px;
     object-fit:cover;
     width:100%;
+    padding-top: 15px;
 }
 .cardactigrande > img, .cardactipetite > img {
-    border-radius:10px 10px 0 0;
+    border-radius:30px 30px 0 0;
     object-fit: cover;
     width:100%;
+    height:140px;
+    padding-top: 15px;
     
 }
 
@@ -453,11 +473,11 @@ footer{
     display:flex;
     flex-direction: column;
     align-content: strech;
-    padding-left: 15px;
+    padding-left: 25px;
 
 }
 .footer{
-    font-size:10px;
+    font-size:12px;
     display:flex;
     flex-direction:column;
     margin-top: 10px;
@@ -467,9 +487,11 @@ footer{
 .footer > p> a{
     text-decoration: none;
     color:black;
+    
 }
 .gras{
   font-weight: bold;
+  font-size: 12px;
   margin-bottom: 10px;
 }
 
