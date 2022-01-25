@@ -6,10 +6,8 @@ html
 
 body
 {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top:2%;
-    
+    margin-left: 5%;
+    margin-right: 5%;    
 }
 
 header
@@ -36,7 +34,7 @@ header
 
 #naventete{
     display: flex;
-    flex-direction:row;
+    
     
 }
 
@@ -48,18 +46,17 @@ header
    .hébergement{
        padding-right: 50px;
        padding-top:1px;
+       border-top: 1px transparent;
    }
-   .activites{
-       padding-right: 150px;
-   }
+   
 
 .hébergement:hover{
 border-top:1px solid #0065FC;
-padding-top:px;
+
 }
 .activites{
     margin-left: 40px;
-    margin-right: 0px;
+    margin-right: 10px;
 }
 
 
@@ -79,32 +76,39 @@ font-weight:normal;
     display:flex;
     border-color:#F2F2F2;
     border-radius:10px;
-    width: 30%;
     height: 30px;
 }
 
 .fa-map-marker-alt{
-    background-color:#F2F2F2;
+    background-color:#f2f2f2;
     font-size: 11px;
-    padding:10px;
-    border-radius: 10px 0 0 10px;
+    padding:8px;
+    border-radius: 10px;
+position:relative;
+    z-index: 1;
 }
 #boutonrechercher{
     color:white;
     background-color:#0065FC;
     border-radius: 0px 10px 10px 0px;
-    font-size: 12px;
+    font-size: 10px;
     padding-bottom: 4px;
+    padding-top:8px;
+    padding-left:6px;
     font-weight: 500;
     border:none;
 }
 
-.loupe{
-    display:none;/*ci dessous les filtres*/
+.fa-search{
+    display:none;
+}
+input[name="recherchelocalisation"]{
+    margin-right: -10px;
+    margin-left:-10px;
 }
 .filtres{
     padding-top: 20px;
-    width:75%;
+    width:68%;
     display:flex;
     justify-content: space-between;
     height: 30px;
@@ -173,8 +177,8 @@ margin-right: 5px;
     display:flex;
     flex-direction: row;
     justify-content: none;
-    width: 980px;
-    height: 400px;
+    width: 980px
+    height: 400px
     
     
 }
@@ -183,7 +187,7 @@ margin-right: 5px;
 #heb
 {display:flex;
     flex-direction: column;
-    width:55%;
+    width:63%;
    background-color:#f2f2f2;
    border-radius: 10px;
    height:390px;
@@ -286,7 +290,7 @@ margin-bottom: 1px;
 /*aside (les plus populaires*/
 
 aside{/*utobene*/
-    width:25%;
+    width:33%;
     height:380px;
     background-color:#F2F2F2 ;
     display:flex;
@@ -376,11 +380,9 @@ line-height: 1px;
 #acti{   
     display:flex;
     flex-direction: row;
-    background-color:rgb(43, 53, 87)
     flex-wrap: nowrap;
     justify-content:space-around;
     align-items:center;  
-    width: 900px;
 }  
 
 .cardactigrande{
@@ -402,6 +404,7 @@ line-height: 1px;
     width: 170px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
+    margin:15px;
   
 }
 
@@ -466,7 +469,6 @@ padding-top: 4px;
 
 /*footer*/
 footer{
-    width:900px;
     background-color:#F2F2F2;
     height:130px;
     margin-top: 30px;

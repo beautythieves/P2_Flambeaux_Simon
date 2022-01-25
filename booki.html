@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
                 
         <meta charset="utf-8" />
@@ -24,6 +24,7 @@
                         <a class="hébergement" href="#heb_marseille">Hébergements</a>
                                               
                         <a class="activites" href="#acti">Activités</a>
+                </nav>
             </div>
                         
                 
@@ -40,16 +41,19 @@
            
                 <!---DEBUT BARRE DE RECHeRCHE-->
             <div id="rechercher">
-                <i class="fas fa-map-marker-alt"></i>
+                
+                <form class="searchForm"  method="GET">
+                      <i class="fas fa-map-marker-alt"></i>
+                
                     <input type="text" name="recherchelocalisation" />
-                <button id="boutonrechercher">
-                    <label for="recherchelocalisation">Rechercher </label>
-                        <i class="fas fa-search loupe"></i>
-                </button>
+                    <button id="boutonrechercher">Rechercher
+                     <i class="fas fa-search loupe"></i>
+                    </button>
+</form>
             </div>
 
                  
-                </br>
+               
                     <!---ci dessous les filtres-->
                 <div class="filtres"> 
                     <div id="entetefiltre"><h2>Filtres</h2>
@@ -84,17 +88,17 @@
                 
                         <p id="plusde500"> Plus de 500 logements sont disponibles dans cette ville</p>
                         </div> 
-                </div>
+                
         </header>
         <!---fin de l'entete>-->
     
  
     
     
-    <div id="blockhebpopu"> <!---ici, block hebergments marseille + les plus populaires--->
+    <div id="blockhebpopu">
     <section id= "heb"> <!---ici, rubrique hébergement à marseille 6 blocks-->
             
-            <h1 id="heb_marseille">Hébergements à Marseille</h1><!-----ancre dans le titre--->
+            <h1 id="heb_marseille">Hébergements à Marseille</h1>
             <div id="sixblocks">
                 
                 <a class="liencarteheb" href="#">   
@@ -102,8 +106,8 @@
                         <img src="images/hebergements/3_medium/lacanne.jpg" alt="auberge la cannebière"/>
                         <div class="intitulecarteheb">
                             <h4> Auberge La Cannebière</h4>
-                            <p class="nuit"> Nuit à partir de <span class=gras>25€</span></p> <!---ici, j'ai du intégrer dans le html les étoiles grises-->
-                            <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="far fa-star etoilegrise"></i></i></span></p> </p>
+                            <p class="nuit"> Nuit à partir de <span class=gras>25€</span></p> 
+                            <p class="etoiles"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="far fa-star etoilegrise"></i></span></p>
                         </div>
                     </div>
                 </a>
@@ -113,7 +117,7 @@
                         <div class="intitulecarteheb">
                             <h4>Hôtel du port</h4>
                             <p class="nuit"> Nuit à partir de 52<span class=gras>€</span></p>
-                            <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span>
+                            <p class="etoiles"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span></p>
                         </div>
                     </div>
                 </a>
@@ -122,7 +126,7 @@
                         <div class="intitulecarteheb">
                             <h4>Hôtel Les Mouettes </h4>
                             <p class="nuit"> Nuit à partir de 76<span class=gras>€</span></p>
-                            <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="far fa-star etoilegrise"></i></i></span>
+                            <p class="etoiles"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="far fa-star etoilegrise"></i></span></p>
     
                         </div>
                     </div>
@@ -132,8 +136,8 @@
                         <div class="intitulecarteheb">
                             <h4> Hôtel de la mer</h4>
                                 <p class="nuit"> Nuit à partir de 46<span class=gras>€</span></p>
-                                <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="far fa-star etoilegrise"></i></i></span><span><i class="far fa-star etoilegrise"></i></i></span></p> 
-                            </p>
+                                <p class="etoiles"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="far fa-star etoilegrise"></i></span><span><i class="far fa-star etoilegrise"></i></span></p> 
+                        
                         </div>
                     </div>
                 </a>
@@ -142,8 +146,8 @@
                         <div class="intitulecarteheb">
                             <h4> Auberge Le Panier</h4>
                                 <p class="nuit"> Nuit à partir de <span class=gras>23€</span></p>
-                                <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="far fa-star etoilegrise"></i></i></span></p> 
-                            </p>
+                                <p class="etoiles"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="far fa-star etoilegrise"></i></span></p> 
+                            
                         </div>
                     </div>
                 </a>
@@ -152,8 +156,8 @@
                         <div class="intitulecarteheb">
                             <h4> Hôtel chez Amina</h4>
                                 <p class="nuit"> Nuit à partir de 96<span class=gras>€</span></p>
-                                <p class="etoiles"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span></p> 
-                            </p>
+                                <p class="etoiles"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span></p> 
+                            
                         </div>
                     </div>
                 </a>
@@ -166,7 +170,7 @@
         
 
 
-    <aside><!---début du bloc les plus populaires--->
+    <aside>
         <div id="entetepopu"><p class="popu">Les plus populaires</p> <p> <i class="fas fa-chart-line"></i></p>
         </div>
         <div class="blokpopu">
@@ -175,8 +179,8 @@
                         <figcaption class="intitulepopu">
                         <p class="nompop" > Hôtel Le soleil du </p><p class="nompop">matin</p>
                         <p class="nuit"> Nuit à partir de 128<span class=gras>€</span></p>
-                        <p class="etoiles2"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span></p> 
-                        </p>
+                        <p class="etoiles2"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span></p> 
+                        
                         </figcaption>
                     </figure>
             </a>
@@ -187,8 +191,8 @@
                         <figcaption class="intitulepopu">
                         <p class="nompop"> Au coeur de l'eau</p> <p class="nompop"> Chambres d'hôtes</p>
                         <p class="nuit"> Nuit à partir de 71<span class=gras>€</span></p>
-                        <p class="etoiles2"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star etoilegrise"></i></i></span></p> 
-                        </p>
+                        <p class="etoiles2"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star etoilegrise"></i></span></p> 
+                        
                         
                         </figcaption>
                     </figure>
@@ -201,8 +205,8 @@
                         <p class="nompop"> Hôtel Tout bleu et </p>
                         <p class="nompop">Blanc</p>
                          <p class="nuit"> Nuit à partir de 68 <span class=gras>€</span></p>
-                         <p class="etoiles2"><i class="fas fa-star"></i></i><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star"></i></i></span><span><i class="fas fa-star etoilegrise"></i></i></span></p> 
-                        </p>
+                         <p class="etoiles2"><i class="fas fa-star"></i><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star"></i></span><span><i class="fas fa-star etoilegrise"></i></span></p> 
+                        
                         </figcaption>
                     </figure> 
                 </a>
@@ -290,7 +294,7 @@
     </div>  
 </footer>
 
-</div>
+
     </body>
 
 
