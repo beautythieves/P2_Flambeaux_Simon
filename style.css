@@ -1,65 +1,54 @@
-html
-{
+html{
     font-family: 'Raleway', sans-serif;
     height: 100%;
 }
 
-body
-{
+body{
     margin-left: 5%;
     margin-right: 5%;    
 }
 
-header
-{ 
+header{ 
     width: 100%;
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
 }
 
-#logonav
-{
+#logonav{
     display:flex;
     justify-content: space-between;
     align-items:stretch;
 }
-
 
 #logonav img{
     width:70px;
     padding: 0px 0px 15px 10px;
 }
 
-
 #naventete{
-    display: flex;
-    
-    
+    display: flex; 
 }
 
 .hébergement , .activites{
     font-size: 10px;
     text-decoration: none;
-    
-   }
-   .hébergement{
-       padding-right: 50px;
-       padding-top:1px;
-       border-top: 1px transparent;
-   }
-   
-
-.hébergement:hover{
-border-top:1px solid #0065FC;
-
 }
+
+.hébergement{
+    padding-right: 50px;
+    padding-top:1px;
+    border-top: 1px transparent;
+}
+   
+.hébergement:hover{
+    border-top:1px solid #0065FC;
+}
+
 .activites{
     margin-left: 40px;
     margin-right: 10px;
 }
-
-
 
 .titre1{
 font-size:12px;
@@ -76,7 +65,8 @@ font-weight:normal;
     display:flex;
     border-color:#F2F2F2;
     border-radius:10px;
-    height: 30px;
+    height: 30%;
+    height:30px;
 }
 
 .fa-map-marker-alt{
@@ -84,7 +74,7 @@ font-weight:normal;
     font-size: 11px;
     padding:8px;
     border-radius: 10px;
-position:relative;
+    position:relative;
     z-index: 1;
 }
 #boutonrechercher{
@@ -98,7 +88,9 @@ position:relative;
     font-weight: 500;
     border:none;
 }
-
+.loupe{
+    display:none;
+}
 .fa-search{
     display:none;
 }
@@ -106,6 +98,7 @@ input[name="recherchelocalisation"]{
     margin-right: -10px;
     margin-left:-10px;
 }
+
 .filtres{
     padding-top: 20px;
     width:68%;
@@ -113,13 +106,13 @@ input[name="recherchelocalisation"]{
     justify-content: space-between;
     height: 30px;
 }
+
 #entetefiltre{
 margin-right: 0px;
 }
-#entetefiltre > h2
-{
-font-size: 10px;
 
+#entetefiltre > h2{
+font-size: 10px;
 }
 
 .boutonfiltre{
@@ -127,13 +120,12 @@ font-size: 10px;
     font-size: 10px;
     border: 1px solid #F2F2F2;
     border-radius: 20px  10px 10px 20px;
-    
 }
 .boutonfiltre:hover{
     color:red;
 }
 
-.fa-money-bill-wave-alt , .fa-child, .fa-heart, .fa-dog {
+.fa-money-bill-wave-alt , .fa-child, .fa-heart, .fa-dog{
     display:flex;
     justify-content: center;
     background-color:rgb(195, 203, 214);
@@ -144,13 +136,12 @@ font-size: 10px;
     font-size: 12px;
     height: 10px;
     width: 10px;
-    
 }
+
 .boutonfiltre > p{
 font-weight: bold;
 margin-left:5px;
 margin-right: 5px;
-
 }
 
 
@@ -158,9 +149,8 @@ margin-right: 5px;
     display:flex;
     flex-direction: row;
     font-size: 10px;
-    
-       
 }
+
 .fa-info-circle{
     margin-right: 10px;    
     background: #0065FC;
@@ -169,33 +159,25 @@ margin-right: 5px;
 	border-radius: 15px;
 }
 
-
-
-
 /*section hebergement marseille et aside*/
 #blockhebpopu{
     display:flex;
-    flex-direction: row;
     justify-content: none;
-    width: 980px
-    height: 400px
-    
-    
 }
 
 /*section heb marseille*/
-#heb
-{display:flex;
+#heb{
+    display:flex;
     flex-direction: column;
     width:63%;
-   background-color:#f2f2f2;
-   border-radius: 10px;
-   height:390px;
-   padding: 0 15px;
+    background-color:#f2f2f2;
+    border-radius: 10px;
+    height:390px;
+    padding: 0 15px;
 }
 
-#heb_marseille/* titre hebergement marseille*/
-{display:flex;
+#heb_marseille{
+    display:flex;
     align-self:baseline;
     padding-left: 15px;
     padding-top: 10px;
@@ -211,7 +193,6 @@ margin-right: 5px;
     align-items:center;
     width:100%;
     height:auto;
-   
 }
 
 /*cartes "hebergement"*/
@@ -225,7 +206,7 @@ margin-right: 5px;
     border-color: aliceblue;
     display:flex;
     flex-wrap: wrap;
-    align-items: flex;/*utlité ici?*/
+    align-items: flex;
     width: 150px;
     height: 120px;
     margin-top:0px;
@@ -233,41 +214,37 @@ margin-right: 5px;
     border-radius:10px;
     background-color:white;
     object-fit: cover;
-    line-height: 2px;
-    
+    line-height: 2px; 
 }
-.card > img{/*here is the key!!!!*/
+
+.card > img{
     border-radius:10px 10px 0 0;
     max-height: 100%;
     object-fit:cover;
     width:100%;
     height:65%;
-    
 }
+
 .etoiles{
     font-size: 6px;
     margin-top: 0px;
-
 }
 
 .fa-star{
-    color:#0065FC;
-    
+    color:#0065FC; 
 }
 
 .etoilegrise{
-color:rgba(126, 114, 114, 0.788);
-font-weight:bold;
+    color:rgba(126, 114, 114, 0.788);
+    font-weight:bold;
 }
+
 .intitulecarteheb{
     display:flex;
     flex-direction: column;
     align-items: baseline;
     margin-top: -5px;
-    padding-left: 5px;
-    
-    
-    
+    padding-left: 5px;  
 }
 
 .intitulecarteheb > h4 {
@@ -275,10 +252,10 @@ font-size: 9px;
 margin-top: 10px;
 margin-bottom: 1px;
 }
+
 .nuit{
     font-size:8px;
     padding-top: 2px;
-   
 }
 #afficher{
     position:relative;
@@ -289,7 +266,7 @@ margin-bottom: 1px;
 
 /*aside (les plus populaires*/
 
-aside{/*utobene*/
+aside{
     width:33%;
     height:380px;
     background-color:#F2F2F2 ;
@@ -298,26 +275,18 @@ aside{/*utobene*/
     margin-left: 20px;
     border-radius: 10px;
     padding:5px 15px 5px 5px;
-    
 }
 
-#entetepopu{/*tutobene*/
+#entetepopu{
     display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 12px;
     padding-left: 10px;
-    
-
 }
 
-
-   
-}
 .lespluspopulaires{
-    text-decoration: none;
-    
-    
+    text-decoration: none;    
 }
 
 .lespluspopulaires figure{
@@ -333,9 +302,9 @@ aside{/*utobene*/
     position:relative;
     bottom:15px;
 }
+
 .lespluspopulaires figcaption{
-    margin-left:10px;
-    
+    margin-left:10px; 
 }
 
 .blokpopu img{
@@ -344,30 +313,27 @@ aside{/*utobene*/
     height:90px;
     object-fit:cover;
 }
-    
 
 .nompop{
     font-size: 9px;
     font-weight:bold;
-color: black;
-line-height: 1px;
+    color: black;
+    line-height: 1px;
 }
-
 
 .nuit{
     font-size: 8px;
     color:black;
 }
+
 .etoiles2{
     font-size: 6px;
     padding-top:15px;
 }
+
 .blokpopu > figcaption{
     margin-left: 200px;
-}
- 
-
-    
+}  
 
 /*section activités à Marseille*/
 #titreacti{
@@ -391,30 +357,29 @@ line-height: 1px;
     box-shadow: 5px 5px 0 #F2F2F2;
     width: 170px;
     height:200px;
-  
 }
+
 .cardactipetite{
     width:170px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius: 10px;
-    margin:10px 10px 10px 10px;  /*a corriger ici*/
-    
+    margin:10px 10px 10px 10px;    
 }
+
 .cardactipetite1 ,.cardactipetite2{
     width: 170px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
     margin:15px;
-  
 }
 
 .cardactigrande > img{
     border-radius:10px 10px 0 0;
     width:170px;
     height:180px;
-    object-fit: cover;
-    
+    object-fit: cover;  
 }
+
 .cardactipetite > img{
     border-radius:10px 10px 0 0;
     width:170px;
@@ -422,29 +387,24 @@ line-height: 1px;
     object-fit: cover;
 }
 
-a[href="#"]
-{
+a[href="#"]{
     text-decoration: none;
-   color:black
+    color:black
 }
 
-.intitulecarteactivites {
+.intitulecarteactivites{
     font-size:8px;
     text-decoration: none;
     font-weight: bold;
     padding-left: 10px;
-padding-top: 4px;
+    padding-top: 4px;
 }
 
-
-
-.cardactipetite1 {/*pb ici!!!!*/
-    
+.cardactipetite1 {
     border-radius:10px;
     box-shadow: 5px 5px 0 #F2F2F2;
-
-
 }
+
 .cardactipetite1 > img{
     border-radius:10px 10px 0 0;
     width:170px;
@@ -472,36 +432,33 @@ footer{
     background-color:#F2F2F2;
     height:130px;
     margin-top: 30px;
-  
-    
 }
+
 .basdepage{
     display:flex;
     justify-content: space-between;
     align-items:baseline;
     align-content: strech;
     padding-left: 15px;
-
 }
+
 .footer{
     font-size:10px;
     display:flex;
     flex-direction:column;
     margin-top: 10px;
     justify-content: center;
-    
     flex-grow: 4;
-        
-    
 }
+
 .footer > p> a{
     text-decoration: none;
     color:black;
 }
+
 .gras{
   font-weight: bold;
   margin-bottom: 10px;
-  
 }
 
 .lienfooter{
