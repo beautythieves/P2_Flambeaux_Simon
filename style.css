@@ -23,7 +23,7 @@ header{
 
 #logonav img{
     width:70px;
-    padding: 0px 0px 15px 10px;
+    padding: 25px 0px 15px 10px;
 }
 
 #naventete{
@@ -31,16 +31,20 @@ header{
 }
 
 .hébergement , .activites{
-    font-size: 10px;
+    font-size: 11px;
     text-decoration: none;
+    border-top: 1px solid transparent;
 }
 
 .hébergement{
-    padding-right: 50px;
-    padding-top:1px;
-    border-top: 1px transparent;
+    padding-right: 20px;
+    padding-left:20px;
+    padding-top:20px;
+  
 }
-   
+.activites{
+    padding-top:20px;
+}
 .hébergement:hover{
     border-top:1px solid #0065FC;
 }
@@ -66,16 +70,13 @@ margin-left:3px;
     display:flex;
     border-color:#F2F2F2;
     border-radius:10px;
-    height: 30%;
-    height:30px;
+
 }
-.searchfrom{
-    
-}
+
 .fa-map-marker-alt{
     background-color:#f2f2f2;
     font-size: 11px;
-    padding:15px;
+    padding:14px 15px 11px 15px;
     border-radius: 10px 0  0 10px;
     position:relative;
     
@@ -91,6 +92,7 @@ margin-left:3px;
     padding-right:11px;
     font-weight: 700;
     border:none;
+    
 }
 .loupe{
     display:none;
@@ -100,6 +102,11 @@ input[name="recherchelocalisation"]{
     margin-right: -4px;
     margin-left:-6px;
     height:30px;
+    border:1px solid#f2f2f2;
+    font-weight:700;
+    font-size:12px;
+    color:black;
+    padding-left:10px;
 }
 
 .filtres{
