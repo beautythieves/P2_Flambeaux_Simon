@@ -4,8 +4,8 @@ html{
 }
 
 body{
-    margin-left: 5%;
-    margin-right: 5%;    
+    margin-left: 35px;
+    margin-right: 35px;    
 }
 
 header{ 
@@ -51,14 +51,15 @@ header{
 }
 
 .titre1{
-font-size:12px;
+font-size:14px;
 font-weight: 500;
 line-height: 0.3;
 }
 
 .titre2{
-font-size:10px;
+font-size:11px;
 font-weight:normal;
+margin-left:3px;
 }
 
 #rechercher{
@@ -68,58 +69,64 @@ font-weight:normal;
     height: 30%;
     height:30px;
 }
-
+.searchfrom{
+    
+}
 .fa-map-marker-alt{
     background-color:#f2f2f2;
     font-size: 11px;
-    padding:8px;
-    border-radius: 10px;
+    padding:15px;
+    border-radius: 10px 0  0 10px;
     position:relative;
-    z-index: 1;
+    
 }
 #boutonrechercher{
     color:white;
     background-color:#0065FC;
     border-radius: 0px 10px 10px 0px;
-    font-size: 10px;
-    padding-bottom: 4px;
-    padding-top:8px;
-    padding-left:6px;
-    font-weight: 500;
+    font-size: 12px;
+    padding-bottom: 10px;
+    padding-top:14px;
+    padding-left:11px;
+    padding-right:11px;
+    font-weight: 700;
     border:none;
 }
 .loupe{
     display:none;
 }
-.fa-search{
-    display:none;
-}
+
 input[name="recherchelocalisation"]{
-    margin-right: -10px;
-    margin-left:-10px;
+    margin-right: -4px;
+    margin-left:-6px;
+    height:30px;
 }
 
 .filtres{
     padding-top: 20px;
-    width:68%;
+    width:75%;
     display:flex;
     justify-content: space-between;
-    height: 30px;
+    height: 35px;
 }
 
 #entetefiltre{
-margin-right: 0px;
+margin-right: 20px;
 }
-
+#but{
+    display:flex;
+}
 #entetefiltre > h2{
-font-size: 10px;
+font-size: 12px;
 }
 
 .boutonfiltre{
     display:flex;
-    font-size: 10px;
-    border: 1px solid #F2F2F2;
-    border-radius: 20px  10px 10px 20px;
+    justify-content:flex-start;
+    margin-right:16px;
+    width:151px;
+    border: 1px solid #b4b1b1;
+    border-radius: 20px;
 }
 .boutonfiltre:hover{
     color:red;
@@ -128,10 +135,10 @@ font-size: 10px;
 .fa-money-bill-wave-alt , .fa-child, .fa-heart, .fa-dog{
     display:flex;
     justify-content: center;
-    background-color:rgb(195, 203, 214);
+    background-color:rgb(166, 213, 231);
     color: #0065FC;
     border-radius: 999px;
-    padding:10px;
+    padding:12px;
     margin:0px;
     font-size: 12px;
     height: 10px;
@@ -142,54 +149,69 @@ font-size: 10px;
 font-weight: bold;
 margin-left:5px;
 margin-right: 5px;
+font-size: 12px;
+
 }
 
 
 #information{
     display:flex;
     flex-direction: row;
-    font-size: 10px;
+    margin-top:20px;
+    margin-bottom:20px;
+    
+}
+#info{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:solid 1px#e1e4eb;
+    border-radius:100%;
+    font-size:9px;
+    color:rgb(71, 147, 215);
+    height:14px;
+    width:14px;
+    margin-right:10px;
 }
 
-.fa-info-circle{
-    margin-right: 10px;    
-    background: #0065FC;
-	color: #FFFFFF;
-	border: 3px solid #F2F2F2;
-	border-radius: 15px;
+#plusde500{
+    font-size:12px;
 }
+
+
 
 /*section hebergement marseille et aside*/
 #blockhebpopu{
     display:flex;
     justify-content: none;
+    margin-bottom:50px;
 }
 
 /*section heb marseille*/
 #heb{
     display:flex;
     flex-direction: column;
-    width:63%;
+    width:725px;
     background-color:#f2f2f2;
     border-radius: 10px;
-    height:390px;
+    height:425px;
     padding: 0 15px;
+    
 }
 
 #heb_marseille{
     display:flex;
     align-self:baseline;
-    padding-left: 15px;
-    padding-top: 10px;
-    font-size: 12px;
-    font-weight: 500;
+    padding-left: 17px;
+    padding-top: 16px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 #sixblocks{
     display:flex;
     flex-flow: row wrap;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items:center;
     width:100%;
     height:auto;
@@ -207,14 +229,15 @@ margin-right: 5px;
     display:flex;
     flex-wrap: wrap;
     align-items: flex;
-    width: 150px;
-    height: 120px;
+    width: 175px;
+    height: 140px;
     margin-top:0px;
     margin-bottom: 20px;
     border-radius:10px;
     background-color:white;
     object-fit: cover;
     line-height: 2px; 
+    box-shadow: 0px 0px 3px -1px #000000;
 }
 
 .card > img{
@@ -226,8 +249,8 @@ margin-right: 5px;
 }
 
 .etoiles{
-    font-size: 6px;
-    margin-top: 0px;
+    font-size: 8px;
+    margin-top: 2px;
 }
 
 .fa-star{
@@ -248,19 +271,20 @@ margin-right: 5px;
 }
 
 .intitulecarteheb > h4 {
-font-size: 9px;
+font-size: 11px;
 margin-top: 10px;
 margin-bottom: 1px;
 }
 
 .nuit{
-    font-size:8px;
+    font-size:10px;
     padding-top: 2px;
 }
 #afficher{
     position:relative;
     left:20px;    
-    font-size:10px;
+    bottom:10px;
+    font-size:12px;
     font-weight:bold;
 }
 
@@ -268,21 +292,21 @@ margin-bottom: 1px;
 
 aside{
     width:33%;
-    height:380px;
+    height:425px;
     background-color:#F2F2F2 ;
     display:flex;
     flex-direction: column;
     margin-left: 20px;
     border-radius: 10px;
-    padding:5px 15px 5px 5px;
+    padding:0px 15px 0px 5px;
 }
 
 #entetepopu{
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
-    font-size: 12px;
-    padding-left: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px;
 }
 
 .lespluspopulaires{
@@ -301,34 +325,37 @@ aside{
 	box-shadow: 0 4px 4px #c0c0c0;
     position:relative;
     bottom:15px;
+    background-color: white;
+    height:95px;
 }
 
 .lespluspopulaires figcaption{
     margin-left:10px; 
+    margin-top:5px;
 }
 
 .blokpopu img{
     width:40%;
     border-radius: 10px 0px 0px 10px;
-    height:90px;
+    height:95px;
     object-fit:cover;
 }
 
 .nompop{
-    font-size: 9px;
+    font-size: 11px;
     font-weight:bold;
     color: black;
     line-height: 1px;
 }
 
-.nuit{
-    font-size: 8px;
+.nuit2{
+    font-size: 10px;
     color:black;
 }
 
 .etoiles2{
-    font-size: 6px;
-    padding-top:15px;
+    font-size: 8px;
+    padding-top:25px;
 }
 
 .blokpopu > figcaption{
@@ -337,37 +364,38 @@ aside{
 
 /*section activités à Marseille*/
 #titreacti{
-    font-size: 12px;
-    font-weight: bold;
-    width:200px;
-    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    
+   
 }
 
 #acti{   
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:space-around;
-    align-items:center;  
+    justify-content:center;
+    align-items:flex-start;  
 }  
 
 .cardactigrande{
     border-radius:10px;
-    margin:20px 0 20px 0;
+    margin:15px;
     box-shadow: 5px 5px 0 #F2F2F2;
-    width: 170px;
-    height:200px;
+    width: 200px;
+    height:auto;
 }
 
 .cardactipetite{
-    width:170px;
+    width:200px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius: 10px;
-    margin:10px 10px 10px 10px;    
+    margin:15px;
+       
 }
 
 .cardactipetite1 ,.cardactipetite2{
-    width: 170px;
+    width: 200px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
     margin:15px;
@@ -375,15 +403,15 @@ aside{
 
 .cardactigrande > img{
     border-radius:10px 10px 0 0;
-    width:170px;
-    height:180px;
+    width:200px;
+    height:270px;
     object-fit: cover;  
 }
 
 .cardactipetite > img{
     border-radius:10px 10px 0 0;
-    width:170px;
-    height:70px;
+    width:200px;
+    height:95px;
     object-fit: cover;
 }
 
@@ -393,11 +421,12 @@ a[href="#"]{
 }
 
 .intitulecarteactivites{
-    font-size:8px;
+    font-size:11px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     padding-left: 10px;
-    padding-top: 4px;
+    padding-top: 20px;
+    padding-bottom:15px;
 }
 
 .cardactipetite1 {
@@ -407,15 +436,15 @@ a[href="#"]{
 
 .cardactipetite1 > img{
     border-radius:10px 10px 0 0;
-    width:170px;
-    height:80px;
+    width:200px;
+    height:110px;
     object-fit: cover;
 }
 
 .cardactipetite2 > img{
     border-radius:10px 10px 0 0;
-    width:170px;
-    height:45px;
+    width:200px;
+    height:80px;
     object-fit: cover;
 }
 .colonne2{
@@ -443,7 +472,7 @@ footer{
 }
 
 .footer{
-    font-size:10px;
+    font-size:12px;
     display:flex;
     flex-direction:column;
     margin-top: 10px;
@@ -457,7 +486,7 @@ footer{
 }
 
 .gras{
-  font-weight: bold;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 

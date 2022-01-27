@@ -1,18 +1,11 @@
-html
-{
+html{
     font-family: 'Raleway', sans-serif;
     height: 100%;
 }
 
-body
-{
-    margin-left: 2%
-    margin-right: 2%
-    
-}
 
-header
-{ 
+
+header{ 
     width: 100%;
     display: flex;
     flex-direction:column;
@@ -32,14 +25,15 @@ header
 
 #logonav img{
     width:100px;
-    padding-left: 50px;
+    padding-bottom:20px;
 }
 
 
 #naventete{
+    display:flex;
     flex-wrap:wrap;
     justify-content: center;
-    border-bottom:1px solid grey
+    border-bottom:1px solid grey;
    width:100%;
    
 
@@ -48,25 +42,23 @@ header
 .hébergement {
     font-size: 12px;
     text-decoration: none;
-    border-bottom:1px solid transparent;
     padding-bottom: 5px;
-    padding-right:50px;
-    padding-left:24px;
+    padding-right:28px;
+    padding-left:2px;
+    width:100%;
    }
 
 .activites{
     font-size:12px;
-    margin-left: 10px
-    margin-right: 0px;
+    margin-right: 30px;
     text-decoration: none;
-    border-bottom:1px solid grey;
     padding-bottom: 5px;
     padding-right:53px;
     padding-left:53px;
+    width:100%;
 }
 .hébergement:hover{
     border-bottom:1px solid #0065FC;
-    padding-top:px;
     }
 #trouvez{
     display:flex;
@@ -93,45 +85,55 @@ width:100%;
 #rechercher{
     display:flex;
     border-color:#F2F2F2;
-    justify-content: center;
     border-radius:10px;
-    width:100%;
+    margin:20px;
 }
 
 .fa-map-marker-alt{
-    background-color:#F2F2F2;
-    font-size: 18px;
-    padding:10px;
-    border-radius: 10px 0 0 10px;
+    background-color:#8a1d1d;
+    font-size: 14px;
+    padding:12px 14px 12px 14px;
+    border-radius: 10px 0px 0px 10px;
+    z-index: 1;
 }
 #boutonrechercher{
     color:white;
     background-color:#0065FC;
-    border-radius: 10px 10px 10px 10px;
-    font-size: 15px;
-    padding: 10px;
+    border-radius: 15px;
+    font-size: 10px;
+    padding: 11px 4px 11px 4px;;
     font-weight: 500;
     border:none;
+    width:40px;
 }
-#boutonrechercher > label{
+.search{
     display:none;
+}
+.loupe{
+    font-size: 15px;;
+}
+
+input[type="text"]{
+    width:180px;
+    height:35px;
+    margin-right: -15px;
+    margin-left:-4px;
+    border-right:none;
+    border-left:none;
+    border-top:1px solid #F2F2F2;
+    border-bottom:1px solid#F2F2F2;
+    box-sizing:border-box;
+}
+.searchform{
 }
 /*ci dessous les filtres*/
 
 .filtres{
-    padding-top: 20px;
+   display:flex;
     width:100%;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: flex-start;/*inutile ici*/
-    margin-left:20px;
-    margin-right:20px;
-    
-    gap:5px 50px;
-    
 }
 #entetefiltre{
-margin: 0px 1000px 0 10px;
+
 
 }
 #entetefiltre > h2
@@ -140,15 +142,21 @@ font-size: 16px;
 
 }
 
+
 .boutonfiltre{
-    display:flex;
+    display:inline-flex;
     flex-wrap:nowrap;
     align-items:center;
-    font-size: 14px;
+    font-size: 12px;
     border: 1px solid rgb(183, 190, 194);
     border-radius: 20px  20px 20px 20px;
-    margin-right: 
-    
+    position:relative;
+    top:40px;
+    right:30px;
+    gap:5px;/*!!!!*/
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-right: 10px;
 }
 .boutonfiltre:hover{
     color:red;
@@ -161,9 +169,9 @@ font-size: 16px;
     background-color:rgb(207, 217, 230);
     color: #0065FC;
     border-radius: 999px;
-    padding:15px;
+    padding:13px;
     margin:0px;
-    font-size: 14px;
+    font-size: 12px;
     height: 14px;
     width: 10px;
     
@@ -181,7 +189,10 @@ margin-right: 5px;
     flex-direction: row;
     flex-wrap:nowrap;
     font-size: 12px;
-    
+    margin-right:60px;
+    margin-left:20px;
+    position:relative;
+    top:40px;
        
 }
 .fa-info-circle{
@@ -201,7 +212,8 @@ margin-right: 5px;
     flex-direction: column-reverse;
     flex-wrap:nowrap;
     width: 100%;
-    
+    position:relative;
+    top:40px;
     
     
 }
@@ -222,8 +234,7 @@ margin-right: 5px;
     padding-left: 15px;
     padding-top: 10px;
     font-size: 18px;
-    font-weight: 500;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 #sixblocks{
@@ -249,7 +260,7 @@ margin-right: 5px;
     flex-wrap: wrap;
     width: 100%;
     height: 180px;
-    box-shadow: 0 4px 4px #c0c0c0;
+    box-shadow: 0 4px 4px #f0ecec;
     border-radius:10px;
     margin-bottom:15px;   
     box-sizing: border-box;
@@ -289,6 +300,7 @@ font-weight:bold;
 font-size: 13px;
 margin-top: 10px;
 margin-bottom: 1px;
+font-weight:700;
 
 }
 .nuit{
@@ -318,7 +330,7 @@ aside{/*utobene*/
 #entetepopu{/*tutobene*/
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     padding-left: 10px;
     padding-right: 15px;
@@ -349,7 +361,7 @@ aside{/*utobene*/
     
 }
 .lespluspopulaires figcaption{
-    margin-left:10px;
+    margin-left:15px;
     
 }
 
@@ -364,7 +376,7 @@ aside{/*utobene*/
 
 .nompop{
     font-size: 13px;
-    font-weight:bold;
+    font-weight:700;
 color: black;
 line-height: 1px;
 }
@@ -376,7 +388,7 @@ line-height: 1px;
 }
 .etoiles2{
     font-size: 10px;
-    padding-top:15px;
+    padding-top:38px;
 }
 .blokpopu > figcaption{
     margin-left: 200px;
@@ -391,7 +403,8 @@ line-height: 1px;
     font-weight: bold;
     width:100%;
     margin: 20px 15px 15px 20px;
-    
+    position:relative;
+    top:40px;
 }
 
 
@@ -412,21 +425,15 @@ line-height: 1px;
     width:100%;
    
 }
-.cardactigrande, .cardactipetite{
+.cardactigrande, .cardactipetite, .cardactipetite1, .cardactipetite2{
     
-    border-radius:10px;
-    box-shadow: 0px 5px 0 #F2F2F2;
-   
+    border-radius:40px 40px 15px 15px;
+    box-shadow: 7px 7px 14px -12px rgba(0,0,0,0.84);
     margin:0;
     padding-bottom:15px;
+    padding-top:10px;
 }
 
-.cardactipetite1 ,.cardactipetite2{
-    box-shadow: 0px 5px 0 #F2F2F2;
-    border-radius:10px;
-    margin: 0;
-    padding-bottom:15px;
-}
 .cardactipetite2 img, .cardactipetite1 img{
     border-radius:30px 30px 0 0;
     height:120px;
@@ -478,11 +485,10 @@ footer{
     flex-direction: column;
     align-content: strech;
     padding-left: 25px;
-    margin-bottom: 40px;;
-
+    padding-bottom: 20px;
 }
 .footer{
-    font-size:14px;
+    font-size:12px;
     display:flex;
     flex-direction:column;
     margin-top: 10px;
