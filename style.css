@@ -4,12 +4,12 @@ html{
 }
 
 body{
-    margin-left: 35px;
-    margin-right: 35px;    
+      
 }
 
 header{ 
-    width: 100%;
+    margin-left: 35px;
+    margin-right: 35px;  
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -115,6 +115,7 @@ input[name="recherchelocalisation"]{
     display:flex;
     justify-content: space-between;
     height: 35px;
+    margin-left:15px;
 }
 
 #entetefiltre{
@@ -196,6 +197,8 @@ font-size: 12px;
 
 /*section hebergement marseille et aside*/
 #blockhebpopu{
+    margin-left: 35px;
+    margin-right: 35px;  
     display:flex;
     justify-content: none;
     margin-bottom:50px;
@@ -380,6 +383,8 @@ aside{
 
 /*section activités à Marseille*/
 #titreacti{
+    margin-left: 35px;
+    margin-right: 35px;  
     font-size: 15px;
     font-weight: 700;
     margin-bottom:0px;
@@ -388,16 +393,17 @@ aside{
 }
 
 #acti{   
+    margin-left: 35px;
+    margin-right: 35px;  
     display:flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:center;
-    align-items:flex-start;  
+   
 }  
 
 .cardactigrande{
     border-radius:10px;
-    margin:15px;
+    margin:10px 17px 10px 0px;
     box-shadow: 5px 5px 0 #F2F2F2;
     width: 200px;
     height:auto;
@@ -407,7 +413,7 @@ aside{
     width:200px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius: 10px;
-    margin:15px;
+    margin:10px 32px 15px 20px;
        
 }
 
@@ -415,13 +421,13 @@ aside{
     width: 200px;
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
-    margin:15px;
+    margin:10px 37px 15px 20px;
 }
 
 .cardactigrande > img{
     border-radius:10px 10px 0 0;
     width:200px;
-    height:270px;
+    height:250px;
     object-fit: cover;  
 }
 
@@ -442,14 +448,11 @@ a[href="#"]{
     text-decoration: none;
     font-weight: 700;
     padding-left: 10px;
-    padding-top: 20px;
-    padding-bottom:15px;
+    padding-top: 10px;
+    padding-bottom:10px;
 }
 
-.cardactipetite1 {
-    border-radius:10px;
-    box-shadow: 5px 5px 0 #F2F2F2;
-}
+
 
 .cardactipetite1 > img{
     border-radius:10px 10px 0 0;
@@ -478,37 +481,47 @@ footer{
     background-color:#F2F2F2;
     height:130px;
     margin-top: 30px;
-    margin-right:-35px;
-    margin-right:-35px;
+  
 }
 
 .basdepage{
     display:flex;
-    justify-content: space-between;
     align-items:baseline;
     align-content: strech;
     padding-left: 15px;
+    padding-right:150px;
 }
 
 .footer{
-    font-size:12px;
+    font-size:11px;
     display:flex;
     flex-direction:column;
     margin-top: 10px;
     justify-content: center;
     flex-grow: 4;
+    padding-left:35px;
 }
 
-.footer > p> a{
+.footer > p{
     text-decoration: none;
     color:black;
+    
 }
 
 .gras{
-  font-weight: 800;
-  margin-bottom: 10px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  text-decoration:none;
 }
 
 .lienfooter{
     margin-bottom:0px;
+        
+}
+a[title]{
+    text-shadow: 3px 2px 4px grey;
+    font-weight:10;
+    text-decoration:none;
+    color:rgb(66, 55, 55);
+  
 }
