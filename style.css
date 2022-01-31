@@ -22,8 +22,8 @@ header{
 }
 
 #logonav img{
-    width:70px;
-    padding: 25px 0px 15px 10px;
+    width:60px;
+    padding: 35px 0px 15px 10px;
 }
 
 #naventete{
@@ -39,11 +39,11 @@ header{
 .hébergement{
     padding-right: 20px;
     padding-left:20px;
-    padding-top:20px;  
+    padding-top:40px;  
 }
 
 .activites{
-    padding-top:20px;
+    padding-top:40px;
 }
 .hébergement:hover{
     border-top:1px solid #0065FC;
@@ -76,7 +76,7 @@ margin-left:3px;
 .fa-map-marker-alt{
     background-color:#f2f2f2;
     font-size: 11px;
-    padding:14px 15px 11px 15px;
+    padding:11px 15px 11px 15px;
     border-radius: 10px 0  0 10px;
     position:relative;
     
@@ -87,7 +87,7 @@ margin-left:3px;
     border-radius: 0px 10px 10px 0px;
     font-size: 12px;
     padding-bottom: 10px;
-    padding-top:14px;
+    padding-top:10px;
     padding-left:11px;
     padding-right:11px;
     font-weight: 700;
@@ -130,33 +130,38 @@ font-size: 12px;
 .boutonfiltre{
     display:flex;
     justify-content:flex-start;
-    margin-right:16px;
-    width:151px;
+    align-items: center;
+padding-right:5px;
+    margin-right:15px;
     border: 1px solid #b4b1b1;
     border-radius: 20px;
+    margin-right:35px;
 }
 .boutonfiltre:hover{
     color:red;
 }
 
 .fa-money-bill-wave-alt , .fa-child, .fa-heart, .fa-dog{
-    display:flex;
-    justify-content: center;
-    background-color:rgb(166, 213, 231);
+    
+    background-color: rgb(222,235,255);
     color: #0065FC;
     border-radius: 999px;
-    padding:12px;
-    margin:0px;
+    padding:13px 13px 13px 13px;
+    margin:0px 0px 0px -1px;
     font-size: 12px;
     height: 10px;
     width: 10px;
 }
 
 .boutonfiltre > p{
+    display:flex;
+    justify-content: center;
+    align-items:center;
 font-weight: bold;
 margin-left:5px;
-margin-right: 5px;
+margin-right: 1px;
 font-size: 12px;
+
 
 }
 
@@ -165,7 +170,7 @@ font-size: 12px;
     display:flex;
     flex-direction: row;
     margin-top:20px;
-    margin-bottom:20px;
+    margin-bottom:10px;
     
 }
 #info{
@@ -179,10 +184,12 @@ font-size: 12px;
     height:14px;
     width:14px;
     margin-right:10px;
+    margin-bottom: 20px;
 }
 
 #plusde500{
-    font-size:12px;
+    font-size:10px;
+    padding-top:3px;
 }
 
 
@@ -198,27 +205,29 @@ font-size: 12px;
 #heb{
     display:flex;
     flex-direction: column;
-    width:725px;
+    width:650px;
     background-color:#f2f2f2;
     border-radius: 10px;
-    height:425px;
+    height:400px;
     padding: 0 15px;
+    margin-right:5px;
     
 }
 
 #heb_marseille{
     display:flex;
     align-self:baseline;
-    padding-left: 17px;
-    padding-top: 16px;
-    font-size: 16px;
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 15px;
     font-weight: 600;
+    margin-bottom:20px;
 }
 
 #sixblocks{
     display:flex;
     flex-flow: row wrap;
-    justify-content:space-evenly;
+    justify-content:space-around;
     align-items:center;
     width:100%;
     height:auto;
@@ -236,15 +245,15 @@ font-size: 12px;
     display:flex;
     flex-wrap: wrap;
     align-items: flex;
-    width: 175px;
-    height: 140px;
+    width: 150px;
+    height: 120px;
     margin-top:0px;
     margin-bottom: 20px;
     border-radius:10px;
     background-color:white;
     object-fit: cover;
     line-height: 2px; 
-    box-shadow: 0px 0px 3px -1px #000000;
+    box-shadow:  0px 0px 6px 1px rgba(0,0,0,0.38);
 }
 
 .card > img{
@@ -256,8 +265,8 @@ font-size: 12px;
 }
 
 .etoiles{
-    font-size: 8px;
-    margin-top: 2px;
+    font-size: 7px;
+    margin-top: -3px;
 }
 
 .fa-star{
@@ -265,7 +274,7 @@ font-size: 12px;
 }
 
 .etoilegrise{
-    color:rgba(126, 114, 114, 0.788);
+    color:rgba(184, 176, 176, 0.788);
     font-weight:bold;
 }
 
@@ -273,12 +282,12 @@ font-size: 12px;
     display:flex;
     flex-direction: column;
     align-items: baseline;
-    margin-top: -5px;
+    margin-top: -2px;
     padding-left: 5px;  
 }
 
 .intitulecarteheb > h4 {
-font-size: 11px;
+font-size: 10px;
 margin-top: 10px;
 margin-bottom: 1px;
 }
@@ -289,23 +298,23 @@ margin-bottom: 1px;
 }
 #afficher{
     position:relative;
-    left:20px;    
-    bottom:10px;
-    font-size:12px;
-    font-weight:bold;
+    left:22px;    
+    bottom:8px;
+    font-size:11px;
+    font-weight:700;
 }
 
 /*aside (les plus populaires*/
 
 aside{
     width:33%;
-    height:425px;
+    height:400px;
     background-color:#F2F2F2 ;
     display:flex;
     flex-direction: column;
     margin-left: 20px;
     border-radius: 10px;
-    padding:0px 15px 0px 5px;
+    padding:0px 5px 0px 5px;
 }
 
 #entetepopu{
@@ -313,7 +322,7 @@ aside{
     justify-content: space-between;
     font-weight: 700;
     font-size: 14px;
-    padding: 10px;
+    padding: 10px 20px 5px 15px;
 }
 
 .lespluspopulaires{
@@ -323,9 +332,9 @@ aside{
 .lespluspopulaires figure{
     display: flex;
 	flex-direction: row;
-	width: 90%;
+	width: 80%;
 	margin-bottom: 0px;
-	margin-left: 15px;
+	margin-left: 22px;
 	margin-right: 10px;
 	border: 3px solid #ffffff;
 	border-radius: 10px 10px 10px 10px;
@@ -333,7 +342,7 @@ aside{
     position:relative;
     bottom:15px;
     background-color: white;
-    height:95px;
+    height:90px;
 }
 
 .lespluspopulaires figcaption{
@@ -344,7 +353,7 @@ aside{
 .blokpopu img{
     width:40%;
     border-radius: 10px 0px 0px 10px;
-    height:95px;
+    height:90px;
     object-fit:cover;
 }
 
@@ -361,8 +370,8 @@ aside{
 }
 
 .etoiles2{
-    font-size: 8px;
-    padding-top:25px;
+    font-size: 7px;
+    padding-top:10px;
 }
 
 .blokpopu > figcaption{
@@ -373,6 +382,7 @@ aside{
 #titreacti{
     font-size: 15px;
     font-weight: 700;
+    margin-bottom:0px;
     
    
 }
@@ -468,6 +478,8 @@ footer{
     background-color:#F2F2F2;
     height:130px;
     margin-top: 30px;
+    margin-right:-35px;
+    margin-right:-35px;
 }
 
 .basdepage{
