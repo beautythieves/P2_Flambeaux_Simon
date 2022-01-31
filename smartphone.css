@@ -25,41 +25,40 @@ header{
 
 #logonav img{
     width:100px;
-    padding-bottom:20px;
+    padding-bottom:40px;
 }
 
 
 #naventete{
     display:flex;
-    flex-wrap:wrap;
     justify-content: center;
     border-bottom:1px solid grey;
    width:100%;
+   padding-bottom:15px;
    
 
 }
 
-.hébergement {
-    font-size: 12px;
-    text-decoration: none;
+
+.navitem{
+    display:flex;
+    justify-content:center;
+    font-size:14px;
+    text-decoration:none;
+    color:black;
     padding-bottom: 5px;
     padding-right:28px;
     padding-left:2px;
-    width:100%;
-   }
+    width:50%;
+    border-bottom: 1px solid transparent;
+    
 
-.activites{
-    font-size:12px;
-    margin-right: 30px;
-    text-decoration: none;
-    padding-bottom: 5px;
-    padding-right:53px;
-    padding-left:53px;
-    width:100%;
 }
 .hébergement:hover{
+    color:#0065FC;
     border-bottom:1px solid #0065FC;
     }
+
 #trouvez{
     display:flex;
     flex-direction: column;
@@ -92,7 +91,7 @@ width:100%;
 .fa-map-marker-alt{
     background-color:#f2f2f2;
     font-size: 14px;
-    padding:12px 14px 12px 14px;
+    padding:13px 14px 12px 14px;
     border-radius: 10px 0px 0px 10px;
     z-index: 1;
 }
@@ -101,7 +100,7 @@ width:100%;
     background-color:#0065FC;
     border-radius: 15px;
     font-size: 10px;
-    padding: 11px 4px 11px 4px;;
+    padding: 10px 4px 11px 4px;;
     font-weight: 500;
     border:none;
     width:40px;
@@ -112,12 +111,16 @@ width:100%;
 .loupe{
     font-size: 15px;;
 }
-
+::placeholder{
+    color:black;
+    font-weight:bold;
+    opacity:1;
+}
 input[type="text"]{
     width:180px;
-    height:35px;
-    margin-right: -10px;
-    margin-left:-1px;
+    height:40px;
+    margin-right: -23px;
+    margin-left:-5px;
     border-right:none;
     border-left:none;
     border:1px solid #F2F2F2;
@@ -131,10 +134,7 @@ input[type="text"]{
    display:flex;
     width:100%;
 }
-#entetefiltre{
 
-
-}
 #entetefiltre > h2
 {
 font-size: 16px;
@@ -166,11 +166,11 @@ padding-left:20px;
     display:flex;
     flex-wrap:nowrap;
     justify-content: center;
-    background-color:#b3d2eb;
+    background-color:rgb(222,235,255);
     color: #0065FC;
     border-radius: 999px;
     padding:13px;
-    margin:0px;
+    margin:0px 0px 0px -1px;
     font-size: 15px;
     height: 14px;
     width: 14px;
@@ -240,7 +240,7 @@ margin-right: 5px;
 #heb_marseille/* titre hebergement marseille*/
 {display:flex;
     align-self:baseline;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-top: 10px;
     font-size: 20px;
     font-weight: 700;
@@ -252,7 +252,7 @@ margin-right: 5px;
     flex-wrap:nowrap;
     justify-content:space-around;
     height:initial;
-    margin: 10px;
+    margin: 20px;
    
 }
 
@@ -319,7 +319,7 @@ font-weight:800;
 }
 #afficher{
     position:relative;
-    left:10px;    
+    left:15px;    
     font-size:16px;
     font-weight:bold;
 }
@@ -363,8 +363,8 @@ aside{/*utobene*/
 	margin-bottom: 0px;
     margin: 10px 20px 10px 10px;
 	border: 3px solid #ffffff;
-	border-radius: 10px 10px 10px 10px;
-	box-shadow: 0 4px 4px #c0c0c0;
+	border-radius: 20px 20px;
+	box-shadow: 0 2px 2px #c0c0c0;
     background-color: white;
     
 }
@@ -412,6 +412,7 @@ line-height: 1px;
     width:100%;
     position:relative;
     top:40px;
+    padding-left: 20px;
 }
 
 
@@ -424,7 +425,7 @@ line-height: 1px;
     margin:20px;  
 } 
 .colonne1, .colonne3, .colonne4{
-   margin: 0;
+   margin: 20px 0 20px 0;
         box-sizing:border-box;
         
        
@@ -432,29 +433,42 @@ line-height: 1px;
 }
 .colonne2{
     width:100%;
-   
+    margin: 20px 0 20px 0;
 }
-.cardactigrande, .cardactipetite, .cardactipetite1, .cardactipetite2{
-    
+.cardactigrande, .cardactipetite {
+    box-shadow: 0px 0px 10px #d2d2d2;
     border-radius:40px 40px 15px 15px;
     margin:0;
-    padding-bottom:15px;
-    padding-top:10px;
+    
+}
+.small{
+    margin:0 0 40px 0; 
+}
+.cardactipetite1{
+    box-shadow: 0px 0px 10px #d2d2d2;
+    border-radius:40px 40px 15px 15px;
+    margin:0; 
+}
+
+.cardactipetite2{
+    box-shadow: 0px 0px 10px #d2d2d2;
+    border-radius:40px 40px 15px 15px;
+    margin:40px 0 0 0;
 }
 
 .cardactipetite2 img, .cardactipetite1 img{
-    border-radius:30px 30px 0 0;
-    height:120px;
+    border-radius:25px 25px 0 0;
+    height:140px;
     object-fit:cover;
     width:100%;
-    padding-top: 15px;
+    padding-top: 0px;
 }
 .cardactigrande > img, .cardactipetite > img {
-    border-radius:30px 30px 0 0;
+    border-radius:25px 25px 0 0;
     object-fit: cover;
     width:100%;
-    height:120px;
-    padding-top: 15px;
+    height:140px;
+    padding-top: 0px;
     
 }
 
@@ -469,8 +483,9 @@ a[href="#"]
     font-size:14px;
     text-decoration: none;
     font-weight: bold;
-    padding-left: 10px;
-padding-top: 10px;
+    padding-left: 20px;
+padding-top: 15px;
+padding-bottom:15px;
 }
 
 
@@ -493,12 +508,13 @@ footer{
     align-content: strech;
     padding-left: 25px;
     padding-bottom: 20px;
+    margin-top:60px;
 }
 .footer{
-    font-size:12px;
+    font-size:16px;
     display:flex;
     flex-direction:column;
-    margin-top: 10px;
+    margin-top: 20px;
     justify-content: center;
     flex-grow: 4;     
 }
@@ -509,7 +525,7 @@ footer{
 }
 .gras{
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 

@@ -108,6 +108,11 @@ input[name="recherchelocalisation"]{
     color:black;
     padding-left:10px;
 }
+::placeholder{
+    color:black;
+    font-weight:bold;
+    opacity:1;
+}
 
 .filtres{
     padding-top: 20px;
