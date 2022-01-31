@@ -404,14 +404,14 @@ aside{
 .cardactigrande{
     border-radius:10px;
     margin:10px 17px 10px 0px;
-    box-shadow: 5px 5px 0 #F2F2F2;
+    box-shadow: 0px 0px 6px 3px  #F2F2F2;
     width: 200px;
     height:auto;
 }
 
 .cardactipetite{
     width:200px;
-    box-shadow: 5px 5px 0 #F2F2F2;
+    box-shadow: 0px 0px 6px 3px  #F2F2F2;
     border-radius: 10px;
     margin:10px 32px 15px 20px;
        
@@ -419,7 +419,7 @@ aside{
 
 .cardactipetite1 ,.cardactipetite2{
     width: 200px;
-    box-shadow: 5px 5px 0 #F2F2F2;
+    box-shadow: 0px 0px 6px 3px  #F2F2F2;
     border-radius:10px;
     margin:10px 37px 15px 20px;
 }
@@ -519,7 +519,7 @@ footer{
         
 }
 a[title]{
-    text-shadow: 3px 2px 4px grey;
+    text-shadow: 1px 1px 3px grey;
     font-weight:10;
     text-decoration:none;
     color:rgb(66, 55, 55);
