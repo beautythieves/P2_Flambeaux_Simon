@@ -168,7 +168,6 @@ margin-left:5px;
 margin-right: 1px;
 font-size: 12px;
 
-
 }
 
 
@@ -517,6 +516,7 @@ footer{
   font-weight: 700;
   margin-bottom: 3px;
   text-decoration:none;
+  font-size:11px;
 }
 
 .lienfooter{

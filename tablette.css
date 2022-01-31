@@ -78,7 +78,7 @@ margin-left:3px;
 .fa-map-marker-alt{
     background-color:#F2F2F2;
     font-size: 11px;
-    padding:9px 15px 7px 15px;
+    padding:11px 15px 12px 15px;
     border-radius: 10px 0 0 10px;
     position:relative;
     z-index: 1;
@@ -110,7 +110,13 @@ input[name="recherchelocalisation"]{
     color:black;
     padding-left:10px;
 }
-/*ci dessous les filtres*/
+
+::placeholder{
+    color:black;
+    font-weight:bold;
+    opacity:1;
+}
+
 
 .filtres{
     padding-top: 20px;
@@ -118,6 +124,7 @@ input[name="recherchelocalisation"]{
     display:flex;
     justify-content: space-between;
     height: 35px;
+    margin-left:15px;
 }
 
 #entetefiltre{
@@ -135,11 +142,12 @@ input[name="recherchelocalisation"]{
 .boutonfiltre{
     display:flex;
     justify-content:flex-start;
+    align-items:center;
     margin-right:16px;
     width:151px;
     border: 1px solid #b4b1b1;
     border-radius: 20px;
-    border-radius: 20px; 
+    
 }
 
 .boutonfiltre:hover{
@@ -202,7 +210,7 @@ font-size:12px;
 #heb{
     display:flex;
     flex-direction: column;
-    width:65%;
+    width:64%;
     background-color:#F2F2F2;
     border-radius: 10px;
     padding: 0 15px;
@@ -262,7 +270,7 @@ font-size:12px;
 
 .etoiles{
     font-size: 7px;
-    margin-top: 2px;
+    margin-top: -1px;
 }
 
 .fa-star{
@@ -283,7 +291,7 @@ font-size:12px;
 }
 
 .intitulecarteheb > h4 {
-    font-size: 12px;
+    font-size: 11px;
     margin-top: 10px;
     margin-bottom: 1px;
 }
@@ -303,7 +311,7 @@ font-size:12px;
 /*aside (les plus populaires*/
 
 aside{
-    width:33%;
+    width:30%;
     background-color:#F2F2F2 ;
     display:flex;
     flex-direction: column;
@@ -329,9 +337,8 @@ aside{
 .lespluspopulaires figure{
     display: flex;
 	flex-direction: row;
-	width: 90%;
 	margin-bottom: 0px;
-	margin-left: 15px;
+	margin-left: 10px;
 	margin-right: 10px;
 	border: 3px solid #ffffff;
 	border-radius: 10px 10px 10px 10px;
@@ -387,8 +394,10 @@ aside{
     background-color: white;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items:flex-start;  
+    margin-right:8px;
+    margin-left:33px;
 }  
 
 .cardactigrande{
@@ -495,7 +504,7 @@ footer{
     color:black;
 }
 
-.gras{
+.gras1{
   font-weight: bold;
   margin-bottom: 10px;
 }
