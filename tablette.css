@@ -198,8 +198,6 @@ font-size:12px;
     font-size:12px;
 }
 
-
-
 /*section hebergement marseille et aside*/
 #blockhebpopu{
     display:flex;
@@ -214,7 +212,6 @@ font-size:12px;
     background-color:#F2F2F2;
     border-radius: 10px;
     padding: 0 15px;
-
 }
 
 #heb_marseille{
@@ -257,7 +254,6 @@ font-size:12px;
     object-fit: cover;
     line-height: 1px; 
     box-shadow: 0px 0px 3px -1px #000000;
-
 }
 
 .card > img{
@@ -299,8 +295,8 @@ font-size:12px;
 .nuit{
     font-size:10px;
     padding-top: 2px;
-   
 }
+
 #afficher{
     position:relative;
     left:20px;    
@@ -309,7 +305,6 @@ font-size:12px;
 }
 
 /*aside (les plus populaires*/
-
 aside{
     width:30%;
     background-color:#F2F2F2 ;
@@ -347,6 +342,7 @@ aside{
     background-color: white;
     height:75px;
 }
+
 .lespluspopulaires figcaption{
     margin-left:10px;
     margin-top:5px;
@@ -414,6 +410,7 @@ aside{
     margin:15px 0 15px 15px;
     padding-bottom:5px;
 }
+
 .cardactipetite1 ,.cardactipetite2{
     box-shadow: 5px 5px 0 #F2F2F2;
     border-radius:10px;
@@ -460,9 +457,11 @@ a[href="#"]{
     height:58px;
     object-fit: cover;
 }
+
 .colonne3{
     margin-right:-50px;
 }
+
 .colonne1{
     margin-left:-50px;
 }
@@ -504,8 +503,8 @@ footer{
 }
 
 .gras1{
-  font-weight: bold;
-  margin-bottom: 10px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .lienfooter{

@@ -3,10 +3,6 @@ html{
     height: 100%;
 }
 
-body{
-      
-}
-
 header{ 
     margin:0 10%;  
     display: flex;
@@ -29,13 +25,13 @@ header{
     display: flex; 
 }
 
-.hébergement , .activites{
+.hebergement , .activites{
     font-size: 11px;
     text-decoration: none;
     border-top: 1px solid transparent;
 }
 
-.hébergement{
+.hebergement{
     padding-right: 20px;
     padding-left:20px;
     padding-top:40px;  
@@ -44,7 +40,8 @@ header{
 .activites{
     padding-top:40px;
 }
-.hébergement:hover{
+
+.hebergement:hover{
     border-top:1px solid #0065FC;
 }
 
@@ -69,7 +66,6 @@ margin-left:3px;
     display:flex;
     border-color:#F2F2F2;
     border-radius:10px;
-
 }
 
 .fa-map-marker-alt{
@@ -78,8 +74,8 @@ margin-left:3px;
     padding:11px 15px 11px 15px;
     border-radius: 10px 0  0 10px;
     position:relative;
-    
 }
+
 #boutonrechercher{
     color:white;
     background-color:#0065FC;
@@ -91,8 +87,8 @@ margin-left:3px;
     padding-right:11px;
     font-weight: 700;
     border:none;
-    
 }
+
 .loupe{
     display:none;
 }
@@ -107,6 +103,7 @@ input[name="recherchelocalisation"]{
     color:black;
     padding-left:10px;
 }
+
 ::placeholder{
     color:black;
     font-weight:bold;
@@ -119,15 +116,17 @@ input[name="recherchelocalisation"]{
     display:flex;
     justify-content: flex-start;
     height: 35px;
-    margin-left:15px;
+    margin-left:10px;
 }
 
 #entetefiltre{
-margin-right: 20px;
+    margin-right: 20px;
 }
+
 #but{
     display:flex;
 }
+
 #entetefiltre > h2{
 font-size: 12px;
 }
@@ -136,18 +135,18 @@ font-size: 12px;
     display:flex;
     justify-content:flex-start;
     align-items: center;
-padding-right:5px;
+    padding-right:5px;
     margin-right:15px;
     border: 1px solid #b4b1b1;
     border-radius: 20px;
     margin-right:35px;
 }
+
 .boutonfiltre:hover{
     color:red;
 }
 
 .fa-money-bill-wave-alt , .fa-child, .fa-heart, .fa-dog{
-    
     background-color: rgb(222,235,255);
     color: #0065FC;
     border-radius: 999px;
@@ -162,21 +161,19 @@ padding-right:5px;
     display:flex;
     justify-content: center;
     align-items:center;
-font-weight: bold;
-margin-left:5px;
-margin-right: 1px;
-font-size: 12px;
-
+    font-weight: bold;
+    margin-left:5px;
+    margin-right: 1px;
+    font-size: 12px;
 }
-
 
 #information{
     display:flex;
     flex-direction: row;
     margin-top:20px;
     margin-bottom:10px;
-    
 }
+
 #info{
     display:flex;
     align-items:center;
@@ -196,8 +193,6 @@ font-size: 12px;
     padding-top:3px;
 }
 
-
-
 /*section hebergement marseille et aside*/
 #blockhebpopu{
     margin:0 10%; 
@@ -215,7 +210,6 @@ font-size: 12px;
     height:400px;
     padding: 0 15px;
     margin-right:5px;
-    
 }
 
 #heb_marseille{
@@ -243,6 +237,7 @@ font-size: 12px;
     text-decoration: none;
     color:black;
 }
+
 .card{
     border-style: solid;
     border-color: aliceblue;
@@ -291,15 +286,16 @@ font-size: 12px;
 }
 
 .intitulecarteheb > h4 {
-font-size: 10px;
-margin-top: 10px;
-margin-bottom: 1px;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 1px;
 }
 
 .nuit{
     font-size:10px;
     padding-top: 2px;
 }
+
 #afficher{
     position:relative;
     left:22px;    
@@ -308,8 +304,7 @@ margin-bottom: 1px;
     font-weight:700;
 }
 
-/*aside (les plus populaires*/
-
+/*aside (les plus populaires)*/
 aside{
     width:33%;
     height:400px;
@@ -388,14 +383,12 @@ aside{
     font-size: 15px;
     font-weight: 700;
     margin-bottom:0px;
-    
 }
 
 #acti{   
     margin:0 10%;  
     display:flex;
     justify-content:space-between;
-   
 }  
 
 .cardactigrande{
@@ -410,8 +403,7 @@ aside{
     width:200px;
     box-shadow: 0px 0px 6px 3px  #F2F2F2;
     border-radius: 10px;
-    margin:10px 32px 15px 20px;
-       
+    margin:10px 0px 15px 20px;
 }
 
 .cardactipetite1 ,.cardactipetite2{
@@ -451,8 +443,6 @@ a[href="#"]{
     padding-bottom:10px;
 }
 
-
-
 .cardactipetite1 > img{
     border-radius:10px 10px 0 0;
     width:200px;
@@ -466,9 +456,11 @@ a[href="#"]{
     height:80px;
     object-fit: cover;
 }
+
 .colonne2{
     padding-left: -50px;
 }
+
 .colonne2, .colonne4{
     display:flex;
     flex-direction: column;
@@ -502,25 +494,23 @@ footer{
 
 .footer > p{
     text-decoration: none;
-    color:black;
-    
+    color:black; 
 }
 
 .gras{
-  font-weight: 700;
-  margin-bottom: 3px;
-  text-decoration:none;
-  font-size:11px;
+    font-weight: 700;
+    margin-bottom: 3px;
+    text-decoration:none;
+    font-size:11px;
 }
 
 .lienfooter{
-    margin-bottom:0px;
-        
+    margin-bottom:0px;      
 }
+
 a[title]{
     text-shadow: 1px 1px 3px grey;
     font-weight:10;
     text-decoration:none;
     color:rgb(66, 55, 55);
-  
 }
