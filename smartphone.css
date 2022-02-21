@@ -37,7 +37,6 @@ header{
 
 .activites{
     color:black;
-    border-bottom:2px solid black;
 }
 
 .navitem{
@@ -47,6 +46,7 @@ header{
     text-decoration:none;
     padding-bottom: 15px;
     width:50%;
+    border-bottom:2px solid black;
 }
 
 #trouvez{
