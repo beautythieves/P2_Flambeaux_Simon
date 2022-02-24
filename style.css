@@ -243,7 +243,6 @@ font-size: 12px;
     border-color: aliceblue;
     display:flex;
     flex-wrap: wrap;
-    align-items: flex;
     width: 150px;
     height: 120px;
     margin-top:0px;
@@ -457,9 +456,7 @@ a[href="#"]{
     object-fit: cover;
 }
 
-.colonne2{
-    padding-left: -50px;
-}
+
 
 .colonne2, .colonne4{
     display:flex;
@@ -477,7 +474,6 @@ footer{
 .basdepage{
     display:flex;
     align-items:baseline;
-    align-content: strech;
     padding-left: 110px;
     padding-right:150px;
 }
@@ -509,7 +505,6 @@ footer{
 }
 
 a[title]{
-    text-shadow: 1px 1px 3px grey;
     font-weight:10;
     text-decoration:none;
     color:rgb(66, 55, 55);
