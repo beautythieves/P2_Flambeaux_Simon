@@ -38,7 +38,7 @@ header{
     
 }
 
-.hébergement{
+.hebergement{
     padding-right: 20px;
     padding-left:20px;
     padding-top:10px;
@@ -244,7 +244,6 @@ font-size:12px;
     border-color: aliceblue;
     display:flex;
     flex-wrap: wrap;
-    align-items: flex;
     width: 150px;
     height: 105px;
     margin-top:0px;
@@ -484,7 +483,6 @@ footer{
     display:flex;
     justify-content: space-between;
     align-items:baseline;
-    align-content: strech;
     padding-left: 15px;
 }
 
