@@ -201,7 +201,6 @@ font-size:12px;
 /*section hebergement marseille et aside*/
 #blockhebpopu{
     display:flex;
-    justify-content: none;
 }
 
 /*section heb marseille*/
@@ -311,7 +310,7 @@ aside{
     flex-direction: column;
     margin-left: 20px;
     border-radius: 10px;
-    padding:5px 15px -1px 5px;
+    padding:5px 15px 1px 5px;
 }
 
 #entetepopu{
